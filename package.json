@@ -7,7 +7,8 @@
   "scripts": {
     "start": "node backend/startup.js && node backend/app.js",
     "seed": "node backend/seed_data.js",
-    "test": "node --test tests/test_data_store.js tests/test_email_reader.js tests/test_api.js"
+    "test": "node --test tests/test_data_store.js tests/test_email_reader.js tests/test_api.js",
+    "test-imap": "node backend/test_imap_prod.js"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
