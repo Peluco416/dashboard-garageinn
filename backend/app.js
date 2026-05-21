@@ -22,6 +22,7 @@ const UNIT_NAMES = {
   'DF1':      'BRASILIA',
   'RJ1':      'AQWA',
   'Barueri1': 'ICON ALPHAVILLE',
+  'PB1':      'PATO BRANCO',
 };
 
 export const app = express();
