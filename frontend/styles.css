@@ -136,22 +136,32 @@ body {
 /* ── Produtos ── */
 .products-list { display: flex; flex-direction: column; gap: 12px; }
 
-/* Logo GarageINN */
+/* Logo GarageINN — vertical */
 .logo-container {
   margin-top: 18px;
   padding-top: 14px;
   border-top: 1px solid #334155;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  gap: 10px;
 }
-.brand-logo {
-  width: 160px;
-  opacity: 0.9;
-  filter: drop-shadow(0 0 8px rgba(220,38,38,0.3));
+.brand-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 12px rgba(220,38,38,0.5));
   transition: opacity .2s;
 }
-.brand-logo:hover { opacity: 1; }
+.brand-text {
+  width: 100%;
+  max-width: 180px;
+  object-fit: contain;
+  opacity: 0.92;
+  transition: opacity .2s;
+}
+.logo-container:hover .brand-icon,
+.logo-container:hover .brand-text { opacity: 1; }
 .prod-row      { display: flex; flex-direction: column; gap: 4px; }
 .prod-meta     { display: flex; justify-content: space-between; font-size: .72rem; }
 .prod-name     { color: #94a3b8; }
