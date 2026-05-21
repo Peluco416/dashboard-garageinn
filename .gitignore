@@ -9,4 +9,4 @@ tunnel_err.txt
 serveo_out.txt
 serveo_err.txt
 .superpowers/
-*.png
+# *.png  # logo incluído no deploy
