@@ -39,7 +39,7 @@ async function postToRailway(sales) {
     const resp = await fetch(`${RAILWAY}/api/sales/insert`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'x-sync-key': SYNC_KEY },
-      body: JSON.stringify({ sales })
+      body: JSON.stringify({ sales }),
     });
     const data = await resp.json();
     console.log(`[sync] Railway: ${data.inserted ?? 0} venda(s) inserida(s)`);
@@ -67,20 +67,34 @@ async function login(page) {
   await page.goto(WEBMAIL, { waitUntil: 'domcontentloaded', timeout: 30000 });
   await new Promise(r => setTimeout(r, 3000));
 
-  if (await isLoggedIn(page)) return true;
+  if (await isLoggedIn(page)) { console.log('[sync] Já logado'); return true; }
 
-  // Try to fill login form
   try {
-    await page.waitForSelector('input[type="email"], input[name="email"]', { timeout: 10000 });
-    await page.type('input[type="email"], input[name="email"]', TITAN_USER, { delay: 50 });
-    await page.type('input[type="password"]', TITAN_PASS, { delay: 50 });
-    await page.click('button[type="submit"], input[type="submit"]');
-    await page.waitForNavigation({ waitUntil: 'networkidle2', timeout: 30000 });
+    // Step 1: enter email
+    await page.waitForSelector('input[name="email"]', { timeout: 10000 });
+    await page.type('input[name="email"]', TITAN_USER, { delay: 50 });
+    await page.click('button.btn-login, button[class*="btn-login"], .btn-primary');
+    await new Promise(r => setTimeout(r, 2000));
+
+    // Step 2: enter password (appears after email step)
+    await page.waitForSelector('input[type="password"], input[name="password"]', { timeout: 10000 });
+    await page.type('input[type="password"], input[name="password"]', TITAN_PASS, { delay: 50 });
+    await page.click('button.btn-login, button[class*="btn-login"], .btn-primary');
+    await page.waitForNavigation({ waitUntil: 'domcontentloaded', timeout: 30000 });
+    await new Promise(r => setTimeout(r, 3000));
+
+    console.log('[sync] Login realizado em:', page.url());
+    return page.url().includes('/mail/');
   } catch(e) {
     console.error('[sync] Login falhou:', e.message);
     return false;
   }
-  return true;
+}
+
+function isRecentEmail(timeHint) {
+  // Titan shows time (e.g. "3:09 am") for today, and "mai 20" for older dates
+  // If timeHint contains "am" or "pm" it's from today
+  return /\d+:\d+\s*(am|pm)/i.test(timeHint);
 }
 
 async function scrapeNewEmails(page, state) {
@@ -102,11 +116,13 @@ async function scrapeNewEmails(page, state) {
 
   console.log(`[sync] E-mails encontrados na caixa: ${emailTexts.length}`);
 
-  // Extract order numbers to check which ones we've already processed
+  // Only process emails that are recent (from today) AND not already seen
   const newEmails = emailTexts.filter(e => {
     const m = e.subject.match(/Pedido nº (\d+)/);
     if (!m) return false;
-    return !state.seen.includes(m[1]);
+    if (state.seen.includes(m[1])) return false;
+    // Only process emails from today (shown with time) unless forceAll is set
+    return process.env.SYNC_ALL === 'true' || isRecentEmail(e.timeHint);
   });
 
   console.log(`[sync] Novos e-mails para processar: ${newEmails.length}`);
