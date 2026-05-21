@@ -3,7 +3,7 @@ node_modules/
 backend/sales.db
 backend/users.json
 backend/invites.json
-backend/email_import.json
+# backend/email_import.json  # mantido no repo para seed inicial
 tunnel_out.txt
 tunnel_err.txt
 serveo_out.txt
