@@ -222,6 +222,17 @@ function copiarLink() {
   });
 }
 
+// ── Controle de acesso: botão de convite só para admin ───────────────────────
+async function initUser() {
+  try {
+    const res  = await fetch('/api/me');
+    const data = await res.json();
+    const isAdmin = data.user?.username === 'admin';
+    const btn = document.getElementById('btn-invite');
+    if (btn) btn.style.display = isAdmin ? 'inline-flex' : 'none';
+  } catch (_) {}
+}
+
 // ── SSE com reconexão automática ─────────────────────────────────────────────
 function connect() {
   const es = new EventSource('/api/stream');
@@ -229,4 +240,5 @@ function connect() {
   es.onerror   = () => { es.close(); setTimeout(connect, 5000); };
 }
 
+initUser();
 connect();
