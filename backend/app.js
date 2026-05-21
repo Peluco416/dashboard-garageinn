@@ -170,6 +170,28 @@ app.post('/api/webhook/vindi', (req, res) => {
   }
 });
 
+// ── Endpoint de sincronização (público, protegido por chave) ─────────────────
+app.post('/api/sales/insert', (req, res) => {
+  try {
+    const key  = req.headers['x-sync-key'] ?? req.body?.key;
+    const expected = process.env.SYNC_KEY ?? 'garageinn_sync_2026';
+    if (key !== expected) return res.status(401).json({ error: 'Chave inválida' });
+
+    const sales = Array.isArray(req.body?.sales) ? req.body.sales : [req.body];
+    const inserted = [];
+    for (const s of sales) {
+      const { unit, product, value, date } = s;
+      if (!unit || !product || !value || !date) continue;
+      insertSale(db, { unit, product, value: parseFloat(value), date });
+      inserted.push({ unit, product, value, date });
+    }
+    if (inserted.length) notify();
+    res.json({ ok: true, inserted: inserted.length, sales: inserted });
+  } catch(e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
 // ── Rotas públicas (login + cadastro por convite) ─────────────────────────────
 app.get('/login', (_req, res) => res.sendFile(path.join(FRONTEND, 'login.html')));
 
