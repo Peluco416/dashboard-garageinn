@@ -180,10 +180,14 @@ function renderBottomKpis(data) {
   tkEl.textContent = `Ticket hoje: ${R(tkRef)}`;
   tkEl.className   = 'kpi-delta flat';
 
-  // Comparativo semanal
-  document.getElementById('weekly-today').textContent = R(w?.today_total ?? 0);
+  // Comparativo semanal (Dom → hoje vs mesmo período semana passada)
+  if (w?.period_label) {
+    const pEl = document.getElementById('weekly-period');
+    if (pEl) pEl.textContent = w.period_label;
+  }
+  document.getElementById('weekly-today').textContent = R(w?.current_total ?? 0);
   const wEl = document.getElementById('weekly-delta');
-  if (w && w.lastweek_total > 0) {
+  if (w && w.prev_total > 0) {
     const up = w.variation_pct >= 0;
     wEl.textContent = `${up ? '▲ +' : '▼ '}${w.variation_pct.toFixed(1)}% vs semana passada`;
     wEl.className   = `kpi-delta ${up ? 'up' : 'down'}`;

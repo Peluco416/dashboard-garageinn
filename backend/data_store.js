@@ -60,26 +60,59 @@ export function getDailyKpis(db, today, yesterday) {
   };
 }
 
-export function getWeekdayComparison(db, today, sameWeekdayLastWeek) {
-  const stats = (date) => {
-    const r = db.prepare(
-      'SELECT SUM(value) AS total, COUNT(*) AS cnt FROM sales WHERE date = ?'
-    ).get(date);
-    const total = r.total ?? 0;
-    const cnt   = r.cnt   ?? 0;
-    return { total: +total.toFixed(2), count: cnt, ticket: cnt > 0 ? +(total/cnt).toFixed(2) : 0 };
+export function getWeeklyPeriodComparison(db, today) {
+  // today = 'YYYY-MM-DD'
+  const d = new Date(today + 'T12:00:00');
+  const dow = d.getDay(); // 0=Dom, 1=Seg, ..., 6=Sáb
+
+  const addDays = (date, n) => {
+    const r = new Date(date);
+    r.setDate(r.getDate() + n);
+    return r.toISOString().slice(0, 10);
   };
-  const t = stats(today);
-  const l = stats(sameWeekdayLastWeek);
-  const varPct = l.total > 0 ? +((t.total - l.total) / l.total * 100).toFixed(1) : 0;
+
+  // Domingo desta semana
+  const curStart = addDays(today, -dow);
+  const curEnd   = today;
+
+  // Mesmo período na semana anterior
+  const prevStart = addDays(curStart, -7);
+  const prevEnd   = addDays(curEnd, -7);
+
+  const row = db.prepare(`
+    SELECT
+      COALESCE(SUM(CASE WHEN date BETWEEN ? AND ? THEN value END), 0) AS cur_total,
+      COALESCE(COUNT(CASE WHEN date BETWEEN ? AND ? THEN 1 END),   0) AS cur_count,
+      COALESCE(SUM(CASE WHEN date BETWEEN ? AND ? THEN value END), 0) AS prev_total,
+      COALESCE(COUNT(CASE WHEN date BETWEEN ? AND ? THEN 1 END),   0) AS prev_count
+    FROM sales
+  `).get(curStart, curEnd, curStart, curEnd, prevStart, prevEnd, prevStart, prevEnd);
+
+  const curT  = row.cur_total  ?? 0;
+  const prevT = row.prev_total ?? 0;
+  const curC  = row.cur_count  ?? 0;
+  const prevC = row.prev_count ?? 0;
+  const varPct = prevT > 0 ? +((curT - prevT) / prevT * 100).toFixed(1) : 0;
+
+  const fmtBR = (s) => { const [y,m,d2] = s.split('-'); return `${d2}/${m}`; };
+  const DAYS  = ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb'];
+
   return {
-    today_total:       t.total,
-    today_ticket:      t.ticket,
-    lastweek_total:    l.total,
-    lastweek_ticket:   l.ticket,
-    lastweek_date:     sameWeekdayLastWeek,
-    variation_pct:     varPct,
-    variation_value:   +(t.total - l.total).toFixed(2),
+    current_total:   +curT.toFixed(2),
+    current_count:   curC,
+    current_ticket:  curC > 0 ? +(curT / curC).toFixed(2) : 0,
+    prev_total:      +prevT.toFixed(2),
+    prev_count:      prevC,
+    prev_ticket:     prevC > 0 ? +(prevT / prevC).toFixed(2) : 0,
+    variation_pct:   varPct,
+    variation_value: +(curT - prevT).toFixed(2),
+    current_start:   curStart,
+    current_end:     curEnd,
+    prev_start:      prevStart,
+    prev_end:        prevEnd,
+    period_label:    `Dom ${fmtBR(curStart)} → ${DAYS[dow]} ${fmtBR(curEnd)}`,
+    prev_label:      `Dom ${fmtBR(prevStart)} → ${DAYS[dow]} ${fmtBR(prevEnd)}`,
+    days_count:      dow + 1,
   };
 }
 

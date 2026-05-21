@@ -5,7 +5,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { initDb, insertSale, getMonthlyTotals, getDailyKpis,
          getUnitRankings, getProductTotals, getBannerData,
-         getWeekdayComparison } from './data_store.js';
+         getWeeklyPeriodComparison } from './data_store.js';
 import { startWatcher } from './email_reader.js';
 import { createUser, verifyUser, deleteUser, listUsers, requireAuth,
          generateInvite, validateInvite, registerWithInvite, listInvites } from './auth.js';
@@ -78,12 +78,7 @@ export function buildPayload() {
 
   const kpis = getDailyKpis(db, today, yesterday);
 
-  const lastWeekDate = new Date();
-  lastWeekDate.setDate(lastWeekDate.getDate() - 7);
-  const lastWeekStr = lastWeekDate.toISOString().slice(0, 10);
-  const weekly = getWeekdayComparison(db, today, lastWeekStr);
-  const DAYS_PT = ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'];
-  weekly.weekday_label = DAYS_PT[new Date().getDay()];
+  const weekly = getWeeklyPeriodComparison(db, today);
 
   const monthly_chart = getMonthlyTotals(db, year).map(r => ({
     month:      MONTH_SHORT[Number(r.month.split('-')[1]) - 1],
