@@ -147,21 +147,21 @@ body {
   gap: 10px;
 }
 .brand-icon {
-  width: 80px;
-  height: 80px;
+  width: 84px;
+  height: 84px;
   object-fit: contain;
-  filter: drop-shadow(0 2px 12px rgba(220,38,38,0.5));
-  transition: opacity .2s;
+  filter: drop-shadow(0 2px 14px rgba(220,38,38,0.55));
 }
-.brand-text {
-  width: 100%;
-  max-width: 180px;
-  object-fit: contain;
-  opacity: 0.92;
-  transition: opacity .2s;
+.brand-name {
+  font-family: 'Arial Black', Arial, sans-serif;
+  font-weight: 900;
+  font-size: 1.35rem;
+  letter-spacing: 2px;
+  line-height: 1;
 }
-.logo-container:hover .brand-icon,
-.logo-container:hover .brand-text { opacity: 1; }
+.brand-garage { color: #94a3b8; }
+.brand-inn    { color: #dc2626; }
+.brand-reg    { color: #dc2626; font-size: .55rem; vertical-align: super; }
 .prod-row      { display: flex; flex-direction: column; gap: 4px; }
 .prod-meta     { display: flex; justify-content: space-between; font-size: .72rem; }
 .prod-name     { color: #94a3b8; }
