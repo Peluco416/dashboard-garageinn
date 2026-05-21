@@ -9,7 +9,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const __dirname    = path.dirname(fileURLToPath(import.meta.url));
-const DATA_DIR     = process.env.DATA_DIR ?? __dirname;
+const DATA_DIR     = process.env.DATA_DIR ?? (process.env.NODE_ENV === 'production' ? '/data' : __dirname);
 const USERS_FILE   = path.join(DATA_DIR, 'users.json');
 const INVITES_FILE = path.join(DATA_DIR, 'invites.json');
 

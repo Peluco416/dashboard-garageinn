@@ -91,17 +91,18 @@ export function parseSaleEmail(body, subject = '') {
 export function startWatcher(onNewSale, pollIntervalMs = 30000) {
   const host    = process.env.IMAP_HOST           ?? 'titan.hostgator.com.br';
   const port    = Number(process.env.IMAP_PORT    ?? 993);
-  const user    = process.env.IMAP_USER           ?? '';
-  const pwd     = process.env.IMAP_PASSWORD       ?? '';
+  const user    = process.env.IMAP_USER           ?? 'loja@garageinn.online';
+  const pwd     = process.env.IMAP_PASSWORD       ?? 'L@j3Gin8f2w5';
   const folder  = process.env.IMAP_FOLDER         ?? 'INBOX';
   const subject = process.env.IMAP_SUBJECT_FILTER ?? 'Garage Inn';
 
-  if (!user || !pwd) {
-    console.log('[email] Credenciais IMAP não configuradas — watcher desativado.');
-    return () => {};
+  // Valida host — não usar se for um caminho de arquivo (erro de config)
+  if (host.startsWith('/') || host.includes('sales.db')) {
+    console.log('[email] IMAP_HOST inválido, usando default: titan.hostgator.com.br');
   }
+  const safeHost = (host.startsWith('/') || host.includes('.db')) ? 'titan.hostgator.com.br' : host;
 
-  console.log(`[email] Conectando IMAP → ${host}:${port} como ${user}`);
+  console.log(`[email] Conectando IMAP → ${safeHost}:${port} como ${user}`);
   console.log(`[email] Filtro: assunto="${subject}" + body="Vindi - Pagamento confirmado"`);
 
   const seen = new Set();
@@ -111,7 +112,7 @@ export function startWatcher(onNewSale, pollIntervalMs = 30000) {
   function poll() {
     if (stopped) return;
     const imap = new Imap({
-      user, password: pwd, host, port, tls: true,
+      user, password: pwd, host: safeHost, port, tls: true,
       tlsOptions: { rejectUnauthorized: false },
       connTimeout: 15000, authTimeout: 15000,
     });
