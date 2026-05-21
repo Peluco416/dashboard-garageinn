@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro — GarageINN Dashboard</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #0f172a;
+      display: flex; align-items: center; justify-content: center;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: #e2e8f0;
+    }
+    .card {
+      background: #1e293b;
+      border-radius: 14px;
+      padding: 40px 36px;
+      width: 380px;
+      box-shadow: 0 20px 60px #00000060;
+    }
+    .logo { text-align: center; margin-bottom: 28px; }
+    .logo h1 { color: #38bdf8; font-size: 1.1rem; font-weight: 700; letter-spacing: 1px; }
+    .logo p  { color: #64748b; font-size: .8rem; margin-top: 4px; }
+
+    label { display: block; font-size: .75rem; color: #94a3b8;
+            text-transform: uppercase; letter-spacing: .8px; margin-bottom: 6px; }
+    input { width: 100%; background: #0f172a; border: 1px solid #334155;
+            border-radius: 8px; padding: 10px 14px; color: #f1f5f9;
+            font-size: .95rem; outline: none; transition: border-color .2s; }
+    input:focus { border-color: #38bdf8; }
+    .field { margin-bottom: 16px; }
+    .hint  { font-size: .7rem; color: #475569; margin-top: 4px; }
+
+    button {
+      width: 100%; background: #4ade80; color: #0f172a;
+      border: none; border-radius: 8px; padding: 12px;
+      font-size: .95rem; font-weight: 700; cursor: pointer;
+      transition: background .2s; margin-top: 6px;
+    }
+    button:hover { background: #86efac; }
+    button:disabled { background: #334155; color: #64748b; cursor: not-allowed; }
+
+    .msg {
+      border-radius: 8px; padding: 10px 14px; font-size: .8rem;
+      margin-bottom: 18px; display: none;
+    }
+    .msg.show { display: block; }
+    .msg.error   { background: #ef444422; border: 1px solid #ef4444; color: #fca5a5; }
+    .msg.success { background: #4ade8022; border: 1px solid #4ade80; color: #86efac; }
+
+    .token-invalid {
+      text-align: center; padding: 20px 0;
+    }
+    .token-invalid p { color: #f87171; font-size: .9rem; margin-bottom: 12px; }
+    .token-invalid small { color: #475569; font-size: .75rem; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">
+      <h1>DASHBOARD VENDAS ONLINE</h1>
+      <p>— GarageINN — Crie seu acesso</p>
+    </div>
+
+    <div class="msg error"  id="error-msg"></div>
+    <div class="msg success" id="success-msg"></div>
+
+    <div id="form-area">
+      <form id="register-form">
+        <div class="field">
+          <label for="displayName">Seu nome completo</label>
+          <input type="text" id="displayName" name="displayName" placeholder="Ex: João Silva" required>
+        </div>
+        <div class="field">
+          <label for="username">Usuário para login</label>
+          <input type="text" id="username" name="username"
+                 placeholder="Ex: joao.silva" autocomplete="username" required>
+          <div class="hint">Apenas letras, números e ponto. Será usado para entrar.</div>
+        </div>
+        <div class="field">
+          <label for="password">Senha</label>
+          <input type="password" id="password" name="password"
+                 placeholder="Mínimo 6 caracteres" autocomplete="new-password" required>
+        </div>
+        <div class="field">
+          <label for="confirm">Confirmar senha</label>
+          <input type="password" id="confirm" name="confirm"
+                 placeholder="Repita a senha" autocomplete="new-password" required>
+        </div>
+        <button type="submit" id="submit-btn">Criar meu acesso</button>
+      </form>
+    </div>
+
+    <div id="invalid-area" class="token-invalid" style="display:none">
+      <p id="invalid-msg">Link de convite inválido ou expirado.</p>
+      <small>Solicite um novo link ao administrador.</small>
+    </div>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(location.search);
+    const token  = params.get('token') ?? '';
+
+    function showError(msg)   { const e = document.getElementById('error-msg');   e.textContent = msg; e.className = 'msg error show'; }
+    function showSuccess(msg) { const e = document.getElementById('success-msg'); e.textContent = msg; e.className = 'msg success show'; }
+    function hideMessages()   { ['error-msg','success-msg'].forEach(id => document.getElementById(id).classList.remove('show')); }
+
+    // Validate token on load
+    async function init() {
+      if (!token) {
+        document.getElementById('form-area').style.display = 'none';
+        document.getElementById('invalid-area').style.display = 'block';
+        document.getElementById('invalid-msg').textContent = 'Link incompleto — faltando o código do convite.';
+        return;
+      }
+      try {
+        const res  = await fetch(`/api/invite/${token}`);
+        const data = await res.json();
+        if (!data.ok) {
+          document.getElementById('form-area').style.display = 'none';
+          document.getElementById('invalid-area').style.display = 'block';
+          document.getElementById('invalid-msg').textContent = data.error ?? 'Convite inválido.';
+        }
+      } catch (e) {
+        document.getElementById('form-area').style.display = 'none';
+        document.getElementById('invalid-area').style.display = 'block';
+        document.getElementById('invalid-msg').textContent = 'Não foi possível conectar ao servidor. Verifique se o link está correto e tente novamente.';
+      }
+    }
+
+    document.getElementById('register-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      hideMessages();
+
+      const displayName = document.getElementById('displayName').value.trim();
+      const username    = document.getElementById('username').value.trim();
+      const password    = document.getElementById('password').value;
+      const confirm     = document.getElementById('confirm').value;
+
+      if (password !== confirm) { showError('As senhas não coincidem.'); return; }
+      if (password.length < 6)  { showError('Senha deve ter pelo menos 6 caracteres.'); return; }
+      if (!/^[a-z0-9._-]+$/i.test(username)) {
+        showError('Usuário só pode conter letras, números, ponto, traço ou underline.'); return;
+      }
+
+      const btn = document.getElementById('submit-btn');
+      btn.disabled = true; btn.textContent = 'Criando...';
+
+      let data;
+      try {
+        const res = await fetch('/api/register', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ token, username, password, displayName }),
+        });
+        data = await res.json();
+      } catch(e) {
+        showError('Erro de conexão. Verifique se o servidor está acessível.');
+        btn.disabled = false; btn.textContent = 'Criar meu acesso';
+        return;
+      }
+
+      if (data.ok) {
+        document.getElementById('register-form').style.display = 'none';
+        showSuccess(`✅ Acesso criado! Seu usuário é "${username}". Agora você já pode fazer login.`);
+        setTimeout(() => location.href = '/login', 3000);
+      } else {
+        showError(data.error ?? 'Erro ao criar acesso.');
+        btn.disabled = false; btn.textContent = 'Criar meu acesso';
+      }
+    });
+
+    init();
+  </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+node_modules/
+.env
+backend/sales.db
+backend/users.json
+backend/invites.json
+backend/email_import.json
+tunnel_out.txt
+tunnel_err.txt
+serveo_out.txt
+serveo_err.txt
+.superpowers/
+*.png
