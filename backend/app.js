@@ -170,7 +170,28 @@ app.post('/api/webhook/vindi', (req, res) => {
   }
 });
 
-// ── Endpoint de sincronização (público, protegido por chave) ─────────────────
+// ── Endpoints de sincronização (públicos, protegidos por chave) ──────────────
+app.delete('/api/sales/delete', (req, res) => {
+  try {
+    const key = req.headers['x-sync-key'] ?? req.body?.key;
+    if (key !== (process.env.SYNC_KEY ?? 'garageinn_sync_2026'))
+      return res.status(401).json({ error: 'Chave inválida' });
+
+    const { unit, product, value, date } = req.body ?? {};
+    if (!unit || !product || !value || !date)
+      return res.status(400).json({ error: 'unit, product, value e date são obrigatórios' });
+
+    const result = db.prepare(
+      'DELETE FROM sales WHERE rowid = (SELECT rowid FROM sales WHERE unit=? AND product=? AND value=? AND date=? LIMIT 1)'
+    ).run(unit, product, parseFloat(value), date);
+
+    if (result.changes) notify();
+    res.json({ ok: true, deleted: result.changes });
+  } catch(e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
 app.post('/api/sales/insert', (req, res) => {
   try {
     const key  = req.headers['x-sync-key'] ?? req.body?.key;
