@@ -106,7 +106,7 @@ export function buildPayload() {
   return {
     banner, kpis, weekly, monthly_chart, products,
     top5_best:  rankings.slice(0, 5),
-    top5_worst: rankings.slice(-5),
+    top5_worst: rankings.slice(-5).reverse(),
   };
 }
 
