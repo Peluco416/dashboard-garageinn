@@ -146,7 +146,7 @@ export function startWatcher(onNewSale, pollIntervalMs = 30000) {
         });
       });
     });
-    imap.once('error', e => console.error('[email] IMAP error:', e.message));
+    imap.once('error', e => console.error('[email] IMAP error:', e.message ?? e.code ?? JSON.stringify(e)));
     imap.connect();
   }
 
