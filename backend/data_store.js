@@ -103,13 +103,14 @@ export function getUnitRankings(db, month, today, yesterday) {
     const cnt = r.month_count     ?? 0;
     const varPct = y > 0 ? +((t - y) / y * 100).toFixed(1) : 0;
     return {
-      rank:          i + 1,
-      unit:          r.unit,
-      month_total:   +r.month_total.toFixed(2),
-      month_ticket:  cnt > 0 ? +(r.month_total / cnt).toFixed(2) : 0,
-      today_total:   +t.toFixed(2),
+      rank:            i + 1,
+      unit:            r.unit,
+      month_total:     +r.month_total.toFixed(2),
+      month_count:     cnt,
+      month_ticket:    cnt > 0 ? +(r.month_total / cnt).toFixed(2) : 0,
+      today_total:     +t.toFixed(2),
       yesterday_total: +y.toFixed(2),
-      variation_pct: varPct,
+      variation_pct:   varPct,
     };
   });
 }

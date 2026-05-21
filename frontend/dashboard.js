@@ -1,85 +1,64 @@
 'use strict';
 
-const R = (v) =>
-  'R$ ' + Number(v).toLocaleString('pt-BR', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
+const R = (v) => 'R$ ' + Number(v).toLocaleString('pt-BR', { minimumFractionDigits: 0, maximumFractionDigits: 0 });
 
-const PROD_COLORS = { Carro: '#38bdf8', Moto: '#a78bfa', Bicicleta: '#fbbf24', Selos: '#4ade80' };
+const PROD_COLORS = {
+  Carro:     { bar: '#00d4ff', bg: 'rgba(0,212,255,.15)' },
+  Moto:      { bar: '#f97316', bg: 'rgba(249,115,22,.15)' },
+  Bicicleta: { bar: '#fbbf24', bg: 'rgba(251,191,36,.15)' },
+  Selos:     { bar: '#00e676', bg: 'rgba(0,230,118,.15)' },
+};
+const PROD_ICONS = { Carro: '🚗', Moto: '🏍', Bicicleta: '🚲', Selos: '📮' };
 
 let chart = null;
 
-// ── Banner ───────────────────────────────────────────────────────────────────
+// ── Banner ────────────────────────────────────────────────────────────────────
 function renderBanner(b) {
-  document.getElementById('banner-label').textContent =
-    `Faturamento Acumulado — ${b.month_label ?? ''}`;
-  document.getElementById('banner-value').textContent = R(b.current_total);
+  document.getElementById('banner-period').textContent = b.month_label ?? '';
+  document.getElementById('banner-value').textContent  = R(b.current_total);
 
-  const up    = b.variation_pct >= 0;
-  const cls   = up ? 'up' : 'down';
-  const arrow = up ? '▲' : '▼';
-  const sign  = up ? '+' : '';
-
-  const varEl = document.getElementById('banner-variation');
-  varEl.textContent = `${arrow} ${sign}${b.variation_pct.toFixed(1)}%`;
-  varEl.className   = `banner-variation ${cls}`;
-
-  document.getElementById('banner-prev').textContent =
-    `vs ${b.previous_month_label ?? 'mês ant.'}: ${R(b.previous_total)}`;
-
-  const diffEl = document.getElementById('banner-diff');
-  diffEl.textContent = `${up ? '+' : ''}${R(b.variation_value)}`;
-  diffEl.className   = `banner-diff ${cls}`;
+  const up  = b.variation_pct >= 0;
+  const el  = document.getElementById('banner-variation');
+  el.textContent = `${up ? '↗' : '↘'} ${up ? '+' : ''}${b.variation_pct.toFixed(1)}%`;
+  el.className   = `growth-value ${up ? 'up' : 'down'}`;
 }
 
-// ── KPIs ─────────────────────────────────────────────────────────────────────
+// ── Hoje / Ontem ──────────────────────────────────────────────────────────────
 function renderKpis(k) {
-  document.getElementById('today-total').textContent      = R(k.today_total);
-  document.getElementById('yesterday-total').textContent  = R(k.yesterday_total);
-  document.getElementById('today-ticket').textContent     = R(k.today_ticket);
-  document.getElementById('yesterday-ticket').textContent = R(k.yesterday_ticket);
+  document.getElementById('today-total').textContent     = R(k.today_total);
+  document.getElementById('yesterday-total').textContent = R(k.yesterday_total);
 
   const delta = k.today_total - k.yesterday_total;
-  const el    = document.getElementById('today-delta');
   const up    = delta >= 0;
-  el.textContent = `${up ? '▲' : '▼'} ${up ? '+' : ''}${R(delta)} vs ontem`;
-  el.className   = `kpi-delta ${up ? 'up' : 'down'}`;
+  document.getElementById('today-sub').textContent =
+    `${up ? '▲' : '▼'} ${up ? '+' : ''}${R(delta)} vs ontem  •  Ticket: ${R(k.today_ticket)}`;
+
+  document.getElementById('yesterday-sub').textContent =
+    `${k.yesterday_count} venda(s)  •  Ticket: ${R(k.yesterday_ticket)}`;
 }
 
-// ── Comparativo Semanal ───────────────────────────────────────────────────────
-function renderWeekly(w) {
-  const weekdayLabel = w.weekday_label ?? 'Hoje';
-  document.getElementById('weekly-label').textContent =
-    `${weekdayLabel} vs mesmo dia semana passada`;
-  document.getElementById('weekly-today').textContent  = R(w.today_total);
-  document.getElementById('weekly-ticket').textContent = R(w.today_ticket);
-
-  // Format last week date: dd/mm
-  const [y, m, d] = w.lastweek_date.split('-');
-  document.getElementById('weekly-prev-label').innerHTML =
-    `Semana passada (${d}/${m}): <strong id="weekly-last">${R(w.lastweek_total)}</strong>`;
-
-  const el = document.getElementById('weekly-delta');
-  const up = w.variation_pct >= 0;
-  el.textContent = w.lastweek_total > 0
-    ? `${up ? '▲' : '▼'} ${up ? '+' : ''}${w.variation_pct.toFixed(1)}%`
-    : 'Sem dados da semana passada';
-  el.className = `kpi-delta ${w.lastweek_total > 0 ? (up ? 'up' : 'down') : 'kpi-neutral'}`;
-}
-
-// ── Gráfico de linha ─────────────────────────────────────────────────────────
-function renderChart(monthly, acumulado) {
-  document.getElementById('acum-total').textContent = R(acumulado);
-
+// ── Gráfico cumulativo ────────────────────────────────────────────────────────
+function renderChart(monthly) {
   const labels  = monthly.map(m => m.month);
-  const values  = monthly.map(m => m.total);
-  const ptColor = monthly.map(m => m.is_current ? '#4ade80' : '#38bdf8');
+  const totals  = monthly.map(m => m.total);
+
+  // Acumulado ano
+  let acc = 0;
+  const cumulative = totals.map(v => { acc += v; return acc; });
+  const currentAcc = cumulative[cumulative.length - 1] ?? 0;
+  document.getElementById('chart-current').textContent = R(currentAcc);
+
+  const ptColors = monthly.map(m => m.is_current ? '#00e676' : '#00d4ff');
 
   if (chart) {
     chart.data.labels = labels;
-    chart.data.datasets[0].data = values;
-    chart.data.datasets[0].pointBackgroundColor = ptColor;
+    chart.data.datasets[0].data = cumulative;
+    chart.data.datasets[0].pointBackgroundColor = ptColors;
     chart.update('none');
     return;
   }
+
+  Chart.register(ChartDataLabels);
 
   const ctx = document.getElementById('monthlyChart').getContext('2d');
   chart = new Chart(ctx, {
@@ -87,23 +66,23 @@ function renderChart(monthly, acumulado) {
     data: {
       labels,
       datasets: [{
-        data: values,
-        borderColor: '#38bdf8',
+        data: cumulative,
+        borderColor: '#00d4ff',
         backgroundColor: (context) => {
           const { ctx: c, chartArea } = context.chart;
           if (!chartArea) return 'transparent';
           const g = c.createLinearGradient(0, chartArea.top, 0, chartArea.bottom);
-          g.addColorStop(0, 'rgba(56,189,248,.35)');
-          g.addColorStop(1, 'rgba(56,189,248,.02)');
+          g.addColorStop(0, 'rgba(0,212,255,.25)');
+          g.addColorStop(1, 'rgba(0,212,255,.01)');
           return g;
         },
         fill: true,
         tension: 0.4,
         borderWidth: 2.5,
         pointRadius: 5,
-        pointHoverRadius: 7,
-        pointBackgroundColor: ptColor,
-        pointBorderColor: '#0f172a',
+        pointHoverRadius: 8,
+        pointBackgroundColor: ptColors,
+        pointBorderColor: '#080c18',
         pointBorderWidth: 2,
       }]
     },
@@ -111,129 +90,174 @@ function renderChart(monthly, acumulado) {
       responsive: true,
       plugins: {
         legend: { display: false },
-        tooltip: { callbacks: { label: (ctx) => R(ctx.parsed.y) } }
+        tooltip: {
+          callbacks: {
+            label: (ctx) => `Acumulado: ${R(ctx.parsed.y)}`,
+            afterLabel: (ctx) => `Mês: ${R(totals[ctx.dataIndex])}`,
+          }
+        },
+        datalabels: {
+          align: 'top',
+          anchor: 'end',
+          color: '#8892a4',
+          font: { size: 10, weight: '600' },
+          formatter: (v) => R(v),
+          display: (ctx) => ctx.datasetIndex === 0,
+        }
       },
       scales: {
-        x: { grid: { color: '#334155' }, ticks: { color: '#64748b' } },
-        y: { grid: { color: '#334155' }, ticks: { color: '#64748b', callback: (v) => R(v) } }
-      }
+        x: {
+          grid: { color: 'rgba(30,42,69,.5)' },
+          ticks: { color: '#4a5568', font: { size: 11 } }
+        },
+        y: {
+          grid: { color: 'rgba(30,42,69,.5)' },
+          ticks: { color: '#4a5568', callback: (v) => R(v), font: { size: 11 } }
+        }
+      },
+      layout: { padding: { top: 24 } }
     }
   });
 }
 
-// ── Produtos ─────────────────────────────────────────────────────────────────
+// ── Produtos ──────────────────────────────────────────────────────────────────
 function renderProducts(products) {
-  const maxVal = Math.max(...products.map(p => p.total), 1);
+  const total = products.reduce((s, p) => s + p.total, 0);
+  document.getElementById('products-total').textContent = R(total);
+
   document.getElementById('products-list').innerHTML = products.map(p => {
-    const color = PROD_COLORS[p.product] ?? '#38bdf8';
-    const pct   = (p.total / maxVal * 100).toFixed(0);
-    return `<div class="prod-row">
-      <div class="prod-meta">
-        <span class="prod-name">${p.icon} ${p.product}</span>
-        <span class="prod-value" style="color:${color}">${R(p.total)}</span>
+    const c    = PROD_COLORS[p.product] ?? { bar: '#00d4ff', bg: 'rgba(0,212,255,.15)' };
+    const icon = PROD_ICONS[p.product] ?? '📦';
+    const pct  = total > 0 ? (p.total / total * 100).toFixed(1) : 0;
+    return `
+    <div class="prod-row">
+      <div class="prod-top">
+        <div class="prod-name">
+          <div class="prod-icon" style="background:${c.bg}">${icon}</div>
+          ${p.product.toUpperCase()}
+        </div>
+        <div class="prod-right">
+          <div class="prod-value" style="color:${c.bar}">${R(p.total)}</div>
+          <div class="prod-pct">${pct}%</div>
+        </div>
       </div>
       <div class="prog-bar">
-        <div class="prog-fill" style="background:${color};width:${pct}%"></div>
+        <div class="prog-fill" style="background:${c.bar};width:${pct}%"></div>
       </div>
     </div>`;
   }).join('');
 }
 
-// ── Rankings ─────────────────────────────────────────────────────────────────
-function badge(rank) {
-  if (rank === 1)  return `<span class="badge b1">1</span>`;
-  if (rank === 2)  return `<span class="badge b2">2</span>`;
-  if (rank === 3)  return `<span class="badge b3">3</span>`;
-  if (rank === 10) return `<span class="badge bz">10</span>`;
-  return `<span class="badge bn">${rank}</span>`;
+// ── Bottom KPIs ───────────────────────────────────────────────────────────────
+function renderBottomKpis(data) {
+  const b = data.banner;
+  const k = data.kpis;
+  const w = data.weekly;
+
+  // Vendas no mês
+  document.getElementById('month-count').textContent = b.current_count ?? '—';
+  document.getElementById('month-count-delta').textContent =
+    `${k.today_count} venda(s) hoje`;
+  document.getElementById('month-count-delta').className = 'kpi-delta flat';
+
+  // Pedidos hoje
+  document.getElementById('today-count').textContent = k.today_count;
+  const countDelta = k.today_count - k.yesterday_count;
+  const countEl = document.getElementById('today-count-delta');
+  countEl.textContent = `${countDelta >= 0 ? '▲' : '▼'} ${countDelta >= 0 ? '+' : ''}${countDelta} vs ontem`;
+  countEl.className = `kpi-delta ${countDelta >= 0 ? 'up' : 'down'}`;
+
+  // Ticket médio mensal
+  document.getElementById('month-ticket').textContent = R(b.current_ticket ?? 0);
+  const ticketDelta = (b.current_ticket ?? 0) - (k.today_ticket || 0);
+  const ticketEl = document.getElementById('month-ticket-delta');
+  ticketEl.textContent = `Hoje: ${R(k.today_ticket)} por venda`;
+  ticketEl.className = 'kpi-delta flat';
+
+  // Comparativo semanal
+  document.getElementById('weekly-today').textContent = R(w?.today_total ?? 0);
+  const wEl  = document.getElementById('weekly-delta');
+  if (w && w.lastweek_total > 0) {
+    const up = w.variation_pct >= 0;
+    wEl.textContent = `${up ? '▲' : '▼'} ${up ? '+' : ''}${w.variation_pct.toFixed(1)}% vs semana passada`;
+    wEl.className   = `kpi-delta ${up ? 'up' : 'down'}`;
+  } else {
+    wEl.textContent = 'Sem dados semana anterior';
+    wEl.className   = 'kpi-delta flat';
+  }
 }
 
-function varCell(pct) {
-  if (pct > 0) return `<td><span class="var-up">▲ +${pct.toFixed(1)}%</span></td>`;
-  if (pct < 0) return `<td><span class="var-down">▼ ${pct.toFixed(1)}%</span></td>`;
-  return `<td><span class="var-flat">— 0%</span></td>`;
+// ── Rankings ──────────────────────────────────────────────────────────────────
+function badge(rank) {
+  if (rank === 1) return `<span class="badge b1">1</span>`;
+  if (rank === 2) return `<span class="badge b2">2</span>`;
+  if (rank === 3) return `<span class="badge b3">3</span>`;
+  return `<span class="badge bn">${rank}</span>`;
 }
 
 function renderRanking(tbodyId, rows) {
   document.getElementById(tbodyId).innerHTML = rows.map(r => `
     <tr>
       <td>${badge(r.rank)}</td>
-      <td title="${r.unit}">${r.unit_name ?? r.unit}</td>
-      <td>${R(r.month_total)}</td>
-      <td style="color:#94a3b8">${R(r.month_ticket)}</td>
+      <td title="${r.unit_name ?? r.unit}">${r.unit_name ?? r.unit}</td>
+      <td style="font-weight:700">${R(r.month_total)}</td>
+      <td style="color:#4a5568">${R(r.month_ticket)}</td>
     </tr>`).join('');
 }
 
-// ── Render principal ─────────────────────────────────────────────────────────
+// ── Render principal ──────────────────────────────────────────────────────────
 function render(data) {
   renderBanner(data.banner);
   renderKpis(data.kpis);
-  if (data.weekly) renderWeekly(data.weekly);
-  renderChart(data.monthly_chart, data.banner.current_total);
+  renderChart(data.monthly_chart);
   renderProducts(data.products);
+  renderBottomKpis(data);
   renderRanking('top5-best',  data.top5_best);
   renderRanking('top5-worst', data.top5_worst);
 }
 
-// ── Convite de usuário ────────────────────────────────────────────────────────
+// ── Convite ───────────────────────────────────────────────────────────────────
 function gerarConvite() {
   document.getElementById('modal-overlay').classList.add('open');
   document.getElementById('modal-link-area').style.display = 'none';
   document.getElementById('btn-gerar').disabled = false;
   document.getElementById('btn-gerar').textContent = 'Gerar Link de Convite';
 }
-
 function fecharModal() {
   document.getElementById('modal-overlay').classList.remove('open');
 }
-
 async function criarLink() {
   const btn = document.getElementById('btn-gerar');
-  btn.disabled = true;
-  btn.textContent = 'Gerando...';
-
+  btn.disabled = true; btn.textContent = 'Gerando...';
   try {
     const res  = await fetch('/api/invite', { method: 'POST' });
     const data = await res.json();
-    if (!data.link) throw new Error('Sem link');
-
+    if (!data.link) throw new Error();
     document.getElementById('link-box').textContent = data.link;
     document.getElementById('link-info').textContent =
       `⏰ Válido por 7 dias  •  Uso único  •  Expira em ${new Date(data.expiresAt).toLocaleDateString('pt-BR')}`;
     document.getElementById('modal-link-area').style.display = 'block';
     document.getElementById('btn-copiar').textContent = '📋 Copiar link';
-    document.getElementById('btn-copiar').classList.remove('copied');
-  } catch(e) {
-    btn.textContent = 'Erro — tente novamente';
-    btn.disabled = false;
-  }
+  } catch { btn.textContent = 'Erro — tente novamente'; btn.disabled = false; }
 }
-
 function copiarLink() {
-  const link = document.getElementById('link-box').textContent;
-  navigator.clipboard.writeText(link).then(() => {
+  navigator.clipboard.writeText(document.getElementById('link-box').textContent).then(() => {
     const btn = document.getElementById('btn-copiar');
     btn.textContent = '✅ Link copiado!';
-    btn.classList.add('copied');
-    setTimeout(() => {
-      btn.textContent = '📋 Copiar link';
-      btn.classList.remove('copied');
-    }, 3000);
+    setTimeout(() => { btn.textContent = '📋 Copiar link'; }, 3000);
   });
 }
 
-// ── Controle de acesso: botão de convite só para admin ───────────────────────
+// ── Auth ──────────────────────────────────────────────────────────────────────
 async function initUser() {
   try {
-    const res  = await fetch('/api/me');
-    const data = await res.json();
-    const isAdmin = data.user?.username === 'admin';
-    const btn = document.getElementById('btn-invite');
-    if (btn) btn.style.display = isAdmin ? 'inline-flex' : 'none';
+    const data = await fetch('/api/me').then(r => r.json());
+    const btn  = document.getElementById('btn-invite');
+    if (btn) btn.style.display = data.user?.username === 'admin' ? 'inline-flex' : 'none';
   } catch (_) {}
 }
 
-// ── SSE com reconexão automática ─────────────────────────────────────────────
+// ── SSE ───────────────────────────────────────────────────────────────────────
 function connect() {
   const es = new EventSource('/api/stream');
   es.onmessage = (e) => { try { render(JSON.parse(e.data)); } catch (_) {} };

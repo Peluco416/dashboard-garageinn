@@ -103,6 +103,11 @@ export function buildPayload() {
   const rankings = getUnitRankings(db, curMonth, today, yesterday)
     .map(r => ({ ...r, unit_name: UNIT_NAMES[r.unit] ?? r.unit }));
 
+  // Totais mensais agregados (count e ticket médio do mês)
+  banner.current_count  = rankings.reduce((s, r) => s + (r.month_count || 0), 0);
+  banner.current_ticket = banner.current_count > 0
+    ? +(banner.current_total / banner.current_count).toFixed(2) : 0;
+
   return {
     banner, kpis, weekly, monthly_chart, products,
     top5_best:  rankings.slice(0, 5),
