@@ -1,0 +1,3798 @@
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 51
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 51
+[sync] Novos e-mails para processar: 2
+[sync] Sem body para: Garage Inn - SP2 - Pedido nº 5353
+[sync] Venda detectada: Garage Inn - SP1 - Pedido nº 6072 → {"unit":"SP1","product":"Carro","value":505,"date":"2026-05-21"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 51
+[sync] Novos e-mails para processar: 2
+[sync] Sem body para: Garage Inn - RJ1 - Pedido nº 379
+[sync] Sem body para: Garage Inn - SP2 - Pedido nº 5353
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 51
+[sync] Novos e-mails para processar: 2
+[sync] Sem body para: Garage Inn - RJ1 - Pedido nº 379
+[sync] Venda detectada: Garage Inn - SP2 - Pedido nº 5353 → {"unit":"SP2","product":"Carro","value":625,"date":"2026-05-21"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 51
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - RJ1 - Pedido nº 379 → {"unit":"RJ1","product":"Carro","value":405,"date":"2026-05-21"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 51
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 51
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 51
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 51
+[sync] Novos e-mails para processar: 1
+[sync] Sem body para: Garage Inn - SP1 - Pedido nº 6074
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 51
+[sync] Novos e-mails para processar: 2
+[sync] Venda detectada: Garage Inn - PB1 - Pedido nº 306 → {"unit":"PB1","product":"Carro","value":115,"date":"2026-05-21"}
+[sync] Venda detectada: Garage Inn - SP1 - Pedido nº 6074 → {"unit":"SP1","product":"Carro","value":515,"date":"2026-05-21"}
+[sync] 2 venda(s) inserida(s) no banco local
+[sync] Railway: 2 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 51
+[sync] Novos e-mails para processar: 1
+[sync] Sem body para: Garage Inn - DF1 - Pedido nº 349
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 51
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - DF1 - Pedido nº 349 → {"unit":"DF1","product":"Moto","value":85,"date":"2026-05-21"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 0
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 51
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 51
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 51
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 51
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 51
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 51
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 51
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 51
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 51
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+^C[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 51
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 51
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 51
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 51
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 51
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 51
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - SP2 - Pedido nº 5354 → {"unit":"SP2","product":"Carro","value":240,"date":"2026-05-21"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 51
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 51
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 51
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 51
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 51
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - SP1 - Pedido nº 6075 → {"unit":"SP1","product":"Carro","value":365,"date":"2026-05-21"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 51
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 51
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 51
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+^C[sync] ===== Sincronização iniciada =====
+^C[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 1
+[sync] Sem body para: Garage Inn - SP1 - Pedido nº 6076
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 1
+[sync] Sem pagamento confirmado: Garage Inn - SP1 - Pedido nº 6076
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 0
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login falhou: Waiting for selector `input[type="password"], input[name="password"]` failed
+[sync] Não conseguiu fazer login
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 0
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login falhou: Waiting for selector `input[type="password"], input[name="password"]` failed
+[sync] Não conseguiu fazer login
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 0
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 0
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login falhou: Waiting for selector `input[type="password"], input[name="password"]` failed
+[sync] Não conseguiu fazer login
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 0
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 0
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login falhou: Navigation timeout of 30000 ms exceeded
+[sync] Não conseguiu fazer login
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 0
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 0
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login falhou: Navigation timeout of 30000 ms exceeded
+[sync] Não conseguiu fazer login
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 0
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login falhou: Waiting for selector `input[type="password"], input[name="password"]` failed
+[sync] Não conseguiu fazer login
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login falhou: Waiting for selector `input[type="password"], input[name="password"]` failed
+[sync] Não conseguiu fazer login
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Erro fatal: [Error: EBUSY: resource busy or locked, unlink 'C:\Users\CLAUDI~1\AppData\Local\Temp\puppeteer_dev_chrome_profile-yDlm60\lockfile'] {
+  errno: -4082,
+  code: 'EBUSY',
+  syscall: 'unlink',
+  path: 'C:\\Users\\CLAUDI~1\\AppData\\Local\\Temp\\puppeteer_dev_chrome_profile-yDlm60\\lockfile'
+}
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 0
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 0
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login falhou: Navigation timeout of 30000 ms exceeded
+[sync] Não conseguiu fazer login
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 0
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login falhou: Navigation timeout of 30000 ms exceeded
+[sync] Não conseguiu fazer login
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 0
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 0
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 0
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login falhou: Navigation timeout of 30000 ms exceeded
+[sync] Não conseguiu fazer login
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 0
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 0
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login falhou: Navigation timeout of 30000 ms exceeded
+[sync] Não conseguiu fazer login
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 0
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login falhou: Navigation timeout of 30000 ms exceeded
+[sync] Não conseguiu fazer login
+[sync] ===== Sincronização iniciada =====
+[sync] Erro fatal: Error: The browser is already running for C:\Users\CLAUDI~1\AppData\Local\Temp\puppeteer_dev_chrome_profile-a2N6Tc. Use a different `userDataDir` or stop the running browser first.
+    at ChromeLauncher.launch (file:///C:/Users/Claudia%20Peluco/Documents/dashboard-vendas/node_modules/puppeteer-core/lib/puppeteer/node/BrowserLauncher.js:145:23)
+    at async ChromeLauncher.launch (file:///C:/Users/Claudia%20Peluco/Documents/dashboard-vendas/node_modules/puppeteer-core/lib/puppeteer/node/ChromeLauncher.js:39:16)
+    at async PuppeteerNode.launch (file:///C:/Users/Claudia%20Peluco/Documents/dashboard-vendas/node_modules/puppeteer-core/lib/puppeteer/node/PuppeteerNode.js:120:16)
+    at async main (file:///C:/Users/Claudia%20Peluco/Documents/dashboard-vendas/backend/sync_emails.js:174:19)
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 0
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 0
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+^C[sync] ===== Sincronização iniciada =====
+[sync] Login falhou: Navigation timeout of 30000 ms exceeded
+[sync] Não conseguiu fazer login
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 2
+[sync] Sem body para: Garage Inn - SP2 - Pedido nº 5358
+[sync] Sem body para: Garage Inn - SP2 - Pedido nº 5357
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 2
+[sync] Sem body para: Garage Inn - SP2 - Pedido nº 5358
+[sync] Sem body para: Garage Inn - SP2 - Pedido nº 5357
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 2
+[sync] Sem body para: Garage Inn - SP2 - Pedido nº 5358
+[sync] Sem pagamento confirmado: Garage Inn - SP2 - Pedido nº 5357
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login falhou: Navigation timeout of 30000 ms exceeded
+[sync] Não conseguiu fazer login
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+^C[sync] ===== Sincronização iniciada =====
+^C[sync] ===== Sincronização iniciada =====
+^C[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 1
+[sync] Sem body para: Garage Inn - SP1 - Pedido nº 6079
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - SP1 - Pedido nº 6079 → {"unit":"SP1","product":"Moto","value":355,"date":"2026-05-25"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 1
+[sync] Sem body para: Garage Inn - SP1 - Pedido nº 6080
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 1
+[sync] Sem body para: Garage Inn - SP1 - Pedido nº 6080
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - SP1 - Pedido nº 6080 → {"unit":"SP1","product":"Carro","value":375,"date":"2026-05-25"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 0
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - Barueri1 - Pedido nº 816 → {"unit":"Barueri1","product":"Carro","value":380,"date":"2026-05-25"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 54
+[sync] Novos e-mails para processar: 3
+[sync] Sem body para: Garage Inn - SP1 - Pedido nº 6082
+[sync] Sem pagamento confirmado: Garage Inn - SP1 - Pedido nº 6081
+[sync] Venda detectada: Garage Inn - SP2 - Pedido nº 5358 → {"unit":"SP2","product":"Carro","value":585,"date":"2026-05-24"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 54
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - SP1 - Pedido nº 6082 → {"unit":"SP1","product":"Carro","value":365,"date":"2026-05-25"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 54
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 54
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 54
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 54
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 54
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 54
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 54
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login falhou: Waiting for selector `input[type="password"], input[name="password"]` failed
+[sync] Não conseguiu fazer login
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 0
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 0
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 0
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login falhou: Waiting for selector `input[type="password"], input[name="password"]` failed
+[sync] Não conseguiu fazer login
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - SP2 - Pedido nº 5360 → {"unit":"SP2","product":"Carro","value":215,"date":"2026-05-25"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 0
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+^C[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - SP2 - Pedido nº 5361 → {"unit":"SP2","product":"Carro","value":450,"date":"2026-05-25"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - SP2 - Pedido nº 5362 → {"unit":"SP2","product":"Moto","value":350,"date":"2026-05-25"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login falhou: Waiting for selector `input[type="password"], input[name="password"]` failed
+[sync] Não conseguiu fazer login
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - SP2 - Pedido nº 5363 → {"unit":"SP2","product":"Carro","value":450,"date":"2026-05-25"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login falhou: Navigation timeout of 30000 ms exceeded
+[sync] Não conseguiu fazer login
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login falhou: Navigation timeout of 30000 ms exceeded
+[sync] Não conseguiu fazer login
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 0
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 0
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login falhou: Waiting for selector `input[type="password"], input[name="password"]` failed
+[sync] Não conseguiu fazer login
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Erro fatal: Error: Failed to launch the browser process:  Code: 1
+
+stderr:
+[0526/002551.489:ERROR:third_party\crashpad\crashpad\util\win\registration_protocol_win.cc:136] TransactNamedPipe: O pipe foi finalizado. (0x6D)
+
+TROUBLESHOOTING: https://pptr.dev/troubleshooting
+
+    at ChildProcess.onClose (file:///C:/Users/Claudia%20Peluco/Documents/dashboard-vendas/node_modules/@puppeteer/browsers/lib/launch.js:339:24)
+    at ChildProcess.emit (node:events:521:24)
+    at ChildProcess._handle.onexit (node:internal/child_process:294:12)
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 3
+[sync] Venda detectada: Garage Inn - SP1 - Pedido nº 6084 → {"unit":"SP1","product":"Carro","value":375,"date":"2026-05-26"}
+[sync] Venda detectada: Garage Inn - SP1 - Pedido nº 6083 → {"unit":"SP1","product":"Carro","value":505,"date":"2026-05-26"}
+[sync] Venda detectada: Garage Inn - SP2 - Pedido nº 5364 → {"unit":"SP2","product":"Carro","value":450,"date":"2026-05-26"}
+[sync] 3 venda(s) inserida(s) no banco local
+[sync] Railway: 3 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Erro fatal: Error: net::ERR_NAME_NOT_RESOLVED at https://titan.hostgator.com.br/mail/
+    at navigate (file:///C:/Users/Claudia%20Peluco/Documents/dashboard-vendas/node_modules/puppeteer-core/lib/puppeteer/cdp/Frame.js:185:27)
+    at async Deferred.race (file:///C:/Users/Claudia%20Peluco/Documents/dashboard-vendas/node_modules/puppeteer-core/lib/puppeteer/util/Deferred.js:33:20)
+    at async CdpFrame.goto (file:///C:/Users/Claudia%20Peluco/Documents/dashboard-vendas/node_modules/puppeteer-core/lib/puppeteer/cdp/Frame.js:151:25)
+    at async CdpPage.goto (file:///C:/Users/Claudia%20Peluco/Documents/dashboard-vendas/node_modules/puppeteer-core/lib/puppeteer/api/Page.js:576:20)
+    at async login (file:///C:/Users/Claudia%20Peluco/Documents/dashboard-vendas/backend/sync_emails.js:67:3)
+    at async main (file:///C:/Users/Claudia%20Peluco/Documents/dashboard-vendas/backend/sync_emails.js:190:22)
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - SP1 - Pedido nº 6086 → {"unit":"SP1","product":"Selos","value":2800,"date":"2026-05-26"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - SP1 - Pedido nº 6087 → {"unit":"SP1","product":"Selos","value":600,"date":"2026-05-26"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 2
+[sync] Venda detectada: Garage Inn - SP2 - Pedido nº 5366 → {"unit":"SP2","product":"Carro","value":240,"date":"2026-05-26"}
+[sync] Sem pagamento confirmado: Garage Inn - SP2 - Pedido nº 5365
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 1
+[sync] Sem body para: Garage Inn - SP1 - Pedido nº 6088
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - SP1 - Pedido nº 6088 → {"unit":"SP1","product":"Carro","value":415,"date":"2026-05-26"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 1
+[sync] Sem pagamento confirmado: Garage Inn - SP1 - Pedido nº 6089
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - SP2 - Pedido nº 5367 → {"unit":"SP2","product":"Carro","value":415,"date":"2026-05-26"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Erro ao enviar para Railway: fetch failed
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - SP1 - Pedido nº 6091 → {"unit":"SP1","product":"Carro","value":415,"date":"2026-05-26"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login falhou: Navigation timeout of 30000 ms exceeded
+[sync] Não conseguiu fazer login
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 0
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - SP1 - Pedido nº 6092 → {"unit":"SP1","product":"Carro","value":365,"date":"2026-05-26"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - SP1 - Pedido nº 6093 → {"unit":"SP1","product":"Carro","value":365,"date":"2026-05-26"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - RJ1 - Pedido nº 380 → {"unit":"RJ1","product":"Carro","value":405,"date":"2026-05-26"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 0
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login falhou: Navigation timeout of 30000 ms exceeded
+[sync] Não conseguiu fazer login
+[sync] ===== Sincronização iniciada =====
+[sync] Login falhou: Navigation timeout of 30000 ms exceeded
+[sync] Não conseguiu fazer login
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - SP2 - Pedido nº 5368 → {"unit":"SP2","product":"Bicicleta","value":45,"date":"2026-05-27"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 1
+[sync] Sem pagamento confirmado: Garage Inn - SP2 - Pedido nº 5369
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 2
+[sync] Sem pagamento confirmado: Garage Inn - SP2 - Pedido nº 5370
+[sync] Venda detectada: Garage Inn - SP2 - Pedido nº 5371 → {"unit":"SP2","product":"Carro","value":550,"date":"2026-05-27"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 1
+[sync] Sem body para: Garage Inn - SP1 - Pedido nº 6094
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - SP1 - Pedido nº 6094 → {"unit":"SP1","product":"Carro","value":365,"date":"2026-05-27"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 2
+[sync] Sem pagamento confirmado: Garage Inn - SP1 - Pedido nº 6095
+[sync] Venda detectada: Garage Inn - RJ1 - Pedido nº 381 → {"unit":"RJ1","product":"Carro","value":405,"date":"2026-05-27"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - SP2 - Pedido nº 5373 → {"unit":"SP2","product":"Selos","value":1600,"date":"2026-05-27"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - SP2 - Pedido nº 5374 → {"unit":"SP2","product":"Selos","value":1000,"date":"2026-05-27"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - SP2 - Pedido nº 5375 → {"unit":"SP2","product":"Carro","value":400,"date":"2026-05-27"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 2
+[sync] Venda detectada: Garage Inn - SP1 - Pedido nº 6097 → {"unit":"SP1","product":"Carro","value":385,"date":"2026-05-27"}
+[sync] Sem pagamento confirmado: Garage Inn - SP1 - Pedido nº 6096
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - SP1 - Pedido nº 6098 → {"unit":"SP1","product":"Carro","value":365,"date":"2026-05-27"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+^C[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - SP1 - Pedido nº 6099 → {"unit":"SP1","product":"Carro","value":505,"date":"2026-05-27"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 0
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 57
+[sync] Novos e-mails para processar: 2
+[sync] Venda detectada: Garage Inn - SP2 - Pedido nº 5377 → {"unit":"SP2","product":"Bicicleta","value":40,"date":"2026-05-28"}
+[sync] Venda detectada: Garage Inn - SP2 - Pedido nº 5376 → {"unit":"SP2","product":"Carro","value":425,"date":"2026-05-28"}
+[sync] 2 venda(s) inserida(s) no banco local
+[sync] Railway: 2 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 0
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login falhou: Navigation timeout of 30000 ms exceeded
+[sync] Não conseguiu fazer login
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - SP2 - Pedido nº 5378 → {"unit":"SP2","product":"Selos","value":1600,"date":"2026-05-29"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - SP2 - Pedido nº 5379 → {"unit":"SP2","product":"Carro","value":635,"date":"2026-05-29"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 2
+[sync] Venda detectada: Garage Inn - SP2 - Pedido nº 5381 → {"unit":"SP2","product":"Carro","value":350,"date":"2026-05-30"}
+[sync] Sem pagamento confirmado: Garage Inn - SP2 - Pedido nº 5380
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 0
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 56
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Erro fatal: Error: net::ERR_NAME_NOT_RESOLVED at https://titan.hostgator.com.br/mail/
+    at navigate (file:///C:/Users/Claudia%20Peluco/Documents/dashboard-vendas/node_modules/puppeteer-core/lib/puppeteer/cdp/Frame.js:185:27)
+    at async Deferred.race (file:///C:/Users/Claudia%20Peluco/Documents/dashboard-vendas/node_modules/puppeteer-core/lib/puppeteer/util/Deferred.js:33:20)
+    at async CdpFrame.goto (file:///C:/Users/Claudia%20Peluco/Documents/dashboard-vendas/node_modules/puppeteer-core/lib/puppeteer/cdp/Frame.js:151:25)
+    at async CdpPage.goto (file:///C:/Users/Claudia%20Peluco/Documents/dashboard-vendas/node_modules/puppeteer-core/lib/puppeteer/api/Page.js:576:20)
+    at async login (file:///C:/Users/Claudia%20Peluco/Documents/dashboard-vendas/backend/sync_emails.js:67:3)
+    at async main (file:///C:/Users/Claudia%20Peluco/Documents/dashboard-vendas/backend/sync_emails.js:190:22)
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 0
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 4
+[sync] Venda detectada: Garage Inn - SP1 - Pedido nº 6101 → {"unit":"SP1","product":"Moto","value":355,"date":"2026-06-01"}
+[sync] Venda detectada: Garage Inn - SP1 - Pedido nº 6100 → {"unit":"SP1","product":"Carro","value":365,"date":"2026-06-01"}
+[sync] Venda detectada: Garage Inn - SP2 - Pedido nº 5383 → {"unit":"SP2","product":"Bicicleta","value":45,"date":"2026-06-01"}
+[sync] Sem pagamento confirmado: Garage Inn - SP2 - Pedido nº 5382
+[sync] 3 venda(s) inserida(s) no banco local
+[sync] Railway: 3 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login falhou: Waiting for selector `input[name="email"]` failed
+[sync] Não conseguiu fazer login
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - SP1 - Pedido nº 6104 → {"unit":"SP1","product":"Carro","value":415,"date":"2026-06-01"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 2
+[sync] Venda detectada: Garage Inn - SP2 - Pedido nº 5385 → {"unit":"SP2","product":"Bicicleta","value":45,"date":"2026-06-01"}
+[sync] Sem pagamento confirmado: Garage Inn - SP2 - Pedido nº 5384
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 3
+[sync] Venda detectada: Garage Inn - SP1 - Pedido nº 6107 → {"unit":"SP1","product":"Carro","value":515,"date":"2026-06-01"}
+[sync] Venda detectada: Garage Inn - SP1 - Pedido nº 6106 → {"unit":"SP1","product":"Carro","value":365,"date":"2026-06-01"}
+[sync] Venda detectada: Garage Inn - SP1 - Pedido nº 6105 → {"unit":"SP1","product":"Carro","value":365,"date":"2026-06-01"}
+[sync] 3 venda(s) inserida(s) no banco local
+[sync] Railway: 3 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 2
+[sync] Venda detectada: Garage Inn - SP2 - Pedido nº 5387 → {"unit":"SP2","product":"Moto","value":195,"date":"2026-06-01"}
+[sync] Sem pagamento confirmado: Garage Inn - SP2 - Pedido nº 5386
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - SP1 - Pedido nº 6108 → {"unit":"SP1","product":"Carro","value":515,"date":"2026-06-01"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 2
+[sync] Venda detectada: Garage Inn - SP1 - Pedido nº 6110 → {"unit":"SP1","product":"Carro","value":515,"date":"2026-06-01"}
+[sync] Venda detectada: Garage Inn - SP1 - Pedido nº 6109 → {"unit":"SP1","product":"Carro","value":365,"date":"2026-06-01"}
+[sync] 2 venda(s) inserida(s) no banco local
+[sync] Railway: 2 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 3
+[sync] Venda detectada: Garage Inn - SP1 - Pedido nº 6112 → {"unit":"SP1","product":"Carro","value":335,"date":"2026-06-01"}
+[sync] Sem pagamento confirmado: Garage Inn - SP1 - Pedido nº 6111
+[sync] Venda detectada: Garage Inn - RJ1 - Pedido nº 382 → {"unit":"RJ1","product":"Carro","value":405,"date":"2026-06-01"}
+[sync] 2 venda(s) inserida(s) no banco local
+[sync] Railway: 2 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 2
+[sync] Venda detectada: Garage Inn - SP2 - Pedido nº 5389 → {"unit":"SP2","product":"Carro","value":585,"date":"2026-06-01"}
+[sync] Venda detectada: Garage Inn - SP2 - Pedido nº 5388 → {"unit":"SP2","product":"Carro","value":515,"date":"2026-06-01"}
+[sync] 2 venda(s) inserida(s) no banco local
+[sync] Railway: 2 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 54
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - SP1 - Pedido nº 6114 → {"unit":"SP1","product":"Carro","value":365,"date":"2026-06-01"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 3
+[sync] Venda detectada: Garage Inn - SP1 - Pedido nº 6117 → {"unit":"SP1","product":"Carro","value":365,"date":"2026-06-01"}
+[sync] Venda detectada: Garage Inn - SP1 - Pedido nº 6116 → {"unit":"SP1","product":"Carro","value":365,"date":"2026-06-01"}
+[sync] Sem pagamento confirmado: Garage Inn - SP1 - Pedido nº 6115
+[sync] 2 venda(s) inserida(s) no banco local
+[sync] Railway: 2 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - SP2 - Pedido nº 5390 → {"unit":"SP2","product":"Carro","value":495,"date":"2026-06-01"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 2
+[sync] Venda detectada: Garage Inn - SP1 - Pedido nº 6118 → {"unit":"SP1","product":"Moto","value":315,"date":"2026-06-01"}
+[sync] Venda detectada: Garage Inn - SP2 - Pedido nº 5391 → {"unit":"SP2","product":"Carro","value":595,"date":"2026-06-01"}
+[sync] 2 venda(s) inserida(s) no banco local
+[sync] Railway: 2 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - SP2 - Pedido nº 5392 → {"unit":"SP2","product":"Carro","value":450,"date":"2026-06-01"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 4
+[sync] Venda detectada: Garage Inn - SP1 - Pedido nº 6120 → {"unit":"SP1","product":"Carro","value":385,"date":"2026-06-02"}
+[sync] Venda detectada: Garage Inn - SP1 - Pedido nº 6119 → {"unit":"SP1","product":"Moto","value":215,"date":"2026-06-02"}
+[sync] Sem pagamento confirmado: Garage Inn - SP2 - Pedido nº 5394
+[sync] Venda detectada: Garage Inn - SP2 - Pedido nº 5393 → {"unit":"SP2","product":"Moto","value":160,"date":"2026-06-02"}
+[sync] 3 venda(s) inserida(s) no banco local
+[sync] Railway: 3 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 55
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 54
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 54
+[sync] Novos e-mails para processar: 2
+[sync] Venda detectada: Garage Inn - SP1 - Pedido nº 6121 → {"unit":"SP1","product":"Carro","value":375,"date":"2026-06-02"}
+[sync] Venda detectada: Garage Inn - SP2 - Pedido nº 5396 → {"unit":"SP2","product":"Carro","value":325,"date":"2026-06-02"}
+[sync] 2 venda(s) inserida(s) no banco local
+[sync] Railway: 2 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 54
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 54
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 54
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 54
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 54
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 54
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 54
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - SP2 - Pedido nº 5397 → {"unit":"SP2","product":"Carro","value":635,"date":"2026-06-02"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 1
+[sync] Sem pagamento confirmado: Garage Inn - SP1 - Pedido nº 6122
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - SP1 - Pedido nº 6123 → {"unit":"SP1","product":"Carro","value":285,"date":"2026-06-02"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - DF1 - Pedido nº 350 → {"unit":"DF1","product":"Carro","value":495,"date":"2026-06-02"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 53
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - SP2 - Pedido nº 5399 → {"unit":"SP2","product":"Carro","value":425,"date":"2026-06-02"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 1
+[sync] Venda detectada: Garage Inn - SP1 - Pedido nº 6124 → {"unit":"SP1","product":"Carro","value":365,"date":"2026-06-02"}
+[sync] 1 venda(s) inserida(s) no banco local
+[sync] Railway: 1 venda(s) inserida(s)
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 52
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login realizado em: https://titan.hostgator.com.br/mail/
+[sync] E-mails encontrados na caixa: 0
+[sync] Novos e-mails para processar: 0
+[sync] Nenhuma venda nova encontrada
+[sync] ===== Sincronização concluída =====
+[sync] ===== Sincronização iniciada =====
+[sync] Login falhou: Navigation timeout of 30000 ms exceeded
+[sync] Não conseguiu fazer login
