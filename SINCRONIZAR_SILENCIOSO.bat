@@ -1,3 +1,3 @@
 ﻿@echo off
-cd /d "C:\Users\Claudia Peluco\Documents\dashboard-vendas"
-node --use-system-ca backend\sync_emails.js >> "C:\Users\Claudia Peluco\Documents\dashboard-vendas\sync_log.txt" 2>&1
+cd /d "%~dp0"
+node --use-system-ca backend\sync_emails.js >> "%~dp0sync_log.txt" 2>&1

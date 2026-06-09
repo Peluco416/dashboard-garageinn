@@ -11,8 +11,12 @@ echo.
 
 cd /d "%~dp0"
 
+echo  Encerrando processos anteriores (se houver)...
+taskkill /f /im node.exe >nul 2>&1
+timeout /t 2 /nobreak >nul
+
 echo  Iniciando servidor...
-start /b node backend/app.js
+start /b node --use-system-ca backend/app.js
 
 timeout /t 3 /nobreak >nul
 

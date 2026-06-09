@@ -10,3 +10,6 @@ serveo_out.txt
 serveo_err.txt
 .superpowers/
 # *.png  # logo incluído no deploy
+.chromium/
+sync_log.txt
+sync_state.json

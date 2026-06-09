@@ -22,6 +22,15 @@ function extractUnit(subject) {
 }
 
 /**
+ * Extrai o número do pedido do assunto do e-mail.
+ * Ex: "Garage Inn - SP1 - Pedido nº 6070" → "6070"
+ */
+function extractOrderId(subject) {
+  const m = subject.match(/Pedido n[ºo°]?\s*(\d+)/i);
+  return m ? m[1] : null;
+}
+
+/**
  * Extrai o produto da linha de produto do e-mail.
  * Ex: "MENSALISTA NAÇÕES UNIDAS 3 - CARRO" → "Carro"
  */
@@ -73,14 +82,15 @@ export function parseSaleEmail(body, subject = '') {
   // Só processa pagamentos confirmados
   if (!body.toLowerCase().includes('vindi - pagamento confirmado')) return null;
 
-  const unit    = extractUnit(subject || body);
-  const product = extractProduct(body);
-  const value   = extractValue(body);
-  const date    = extractDate(body);
+  const unit     = extractUnit(subject || body);
+  const product  = extractProduct(body);
+  const value    = extractValue(body);
+  const date     = extractDate(body);
+  const order_id = extractOrderId(subject || body);
 
   if (!unit || !product || !value || value <= 0) return null;
 
-  return { unit, product, value, date };
+  return { unit, product, value, date, order_id };
 }
 
 /**

@@ -16,17 +16,24 @@ export function initDb(dbPath = DEFAULT_DB) {
       unit       TEXT NOT NULL,
       product    TEXT NOT NULL,
       value      REAL NOT NULL,
+      order_id   TEXT,
       created_at TEXT DEFAULT (datetime('now'))
     );
     CREATE INDEX IF NOT EXISTS idx_date ON sales(date);
     CREATE INDEX IF NOT EXISTS idx_unit ON sales(unit);
   `);
+  // Migração: adiciona order_id e índice único em bancos já existentes
+  const cols = db.prepare("PRAGMA table_info(sales)").all();
+  if (!cols.some(c => c.name === 'order_id')) {
+    db.exec('ALTER TABLE sales ADD COLUMN order_id TEXT');
+  }
+  db.exec('CREATE UNIQUE INDEX IF NOT EXISTS idx_order_id ON sales(order_id)');
   return db;
 }
 
-export function insertSale(db, { date, unit, product, value }) {
-  db.prepare('INSERT INTO sales (date, unit, product, value) VALUES (?, ?, ?, ?)')
-    .run(date, unit, product, value);
+export function insertSale(db, { date, unit, product, value, order_id }) {
+  db.prepare('INSERT OR IGNORE INTO sales (date, unit, product, value, order_id) VALUES (?, ?, ?, ?, ?)')
+    .run(date, unit, product, value, order_id ?? null);
 }
 
 export function getMonthlyTotals(db, year) {

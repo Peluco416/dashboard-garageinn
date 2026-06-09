@@ -202,10 +202,10 @@ app.post('/api/sales/insert', (req, res) => {
     const sales = Array.isArray(req.body?.sales) ? req.body.sales : [req.body];
     const inserted = [];
     for (const s of sales) {
-      const { unit, product, value, date } = s;
+      const { unit, product, value, date, order_id } = s;
       if (!unit || !product || !value || !date) continue;
-      insertSale(db, { unit, product, value: parseFloat(value), date });
-      inserted.push({ unit, product, value, date });
+      insertSale(db, { unit, product, value: parseFloat(value), date, order_id });
+      inserted.push({ unit, product, value, date, order_id });
     }
     if (inserted.length) notify();
     res.json({ ok: true, inserted: inserted.length, sales: inserted });

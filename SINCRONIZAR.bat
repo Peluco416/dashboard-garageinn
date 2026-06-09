@@ -12,7 +12,7 @@ echo  Aguarde, isso pode levar 30-60 segundos.
 echo.
 
 cd /d "%~dp0"
-node backend/sync_emails.js
+node --use-system-ca backend/sync_emails.js
 
 echo.
 echo  Sincronizacao concluida!
