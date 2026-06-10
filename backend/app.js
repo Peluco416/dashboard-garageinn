@@ -7,6 +7,7 @@ import { initDb, insertSale, getMonthlyTotals, getDailyKpis,
          getUnitRankings, getUnitRankingsAllTime, getProductTotals, getBannerData,
          getWeeklyPeriodComparison } from './data_store.js';
 import { startWatcher } from './email_reader.js';
+import { localDateStr, addDaysStr } from './date_utils.js';
 import { createUser, verifyUser, deleteUser, listUsers, requireAuth,
          generateInvite, validateInvite, registerWithInvite, listInvites } from './auth.js';
 
@@ -59,17 +60,22 @@ const MONTH_NAMES = ['Janeiro','Fevereiro','Março','Abril','Maio','Junho',
 const MONTH_SHORT = ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];
 const PROD_ICONS  = { Carro:'🚗', Moto:'🏍', Bicicleta:'🚲', Selos:'📮' };
 
-const todayStr     = () => new Date().toISOString().slice(0,10);
-const yesterdayStr = () => { const d=new Date(); d.setDate(d.getDate()-1); return d.toISOString().slice(0,10); };
+const todayStr     = () => localDateStr();
+const yesterdayStr = () => addDaysStr(todayStr(), -1);
 const currentMonth = () => todayStr().slice(0,7);
-const previousMonth= () => { const d=new Date(); d.setDate(1); d.setMonth(d.getMonth()-1); return d.toISOString().slice(0,7); };
+const previousMonth= () => {
+  const [y, m] = todayStr().split('-').map(Number);
+  const d = new Date(Date.UTC(y, m - 1, 1));
+  d.setUTCMonth(d.getUTCMonth() - 1);
+  return d.toISOString().slice(0,7);
+};
 
 export function buildPayload() {
   const today     = todayStr();
   const yesterday = yesterdayStr();
   const curMonth  = currentMonth();
   const prevMonth = previousMonth();
-  const year      = new Date().getFullYear();
+  const year      = Number(today.slice(0,4));
 
   const banner = getBannerData(db, curMonth, prevMonth);
   const mIdx   = Number(curMonth.split('-')[1])  - 1;
@@ -135,8 +141,8 @@ app.post('/api/webhook/vindi', (req, res) => {
     // Extrai o nome do plano (produto) e valor
     const planName  = data?.plan?.name ?? data?.product_items?.[0]?.product?.name ?? data?.subscription?.plan?.name ?? '';
     const amount    = data?.amount ?? data?.bill_items?.[0]?.amount ?? data?.charge?.amount ?? 0;
-    const dateRaw   = data?.created_at ?? data?.updated_at ?? new Date().toISOString();
-    const date      = dateRaw.slice(0, 10);
+    const dateRaw   = data?.created_at ?? data?.updated_at ?? null;
+    const date      = dateRaw ? dateRaw.slice(0, 10) : localDateStr();
 
     // Detecta produto pelo nome do plano
     const lower = planName.toLowerCase();

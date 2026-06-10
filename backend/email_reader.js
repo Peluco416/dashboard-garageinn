@@ -1,6 +1,7 @@
 import Imap from 'imap';
 import { simpleParser } from 'mailparser';
 import 'dotenv/config';
+import { localDateStr } from './date_utils.js';
 
 // Palavras-chave do produto no texto do e-mail → nome padronizado
 const PRODUCT_KEYWORDS = [
@@ -70,7 +71,7 @@ function extractDate(text) {
   // Fallback: qualquer data DD/MM/YYYY
   const m2 = text.match(/(\d{2})\/(\d{2})\/(\d{4})/);
   if (m2) return `${m2[3]}-${m2[2]}-${m2[1]}`;
-  return new Date().toISOString().slice(0, 10);
+  return localDateStr();
 }
 
 /**
