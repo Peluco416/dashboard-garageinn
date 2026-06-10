@@ -265,6 +265,15 @@ app.use(express.static(FRONTEND));
 
 app.get('/api/me', (req, res) => res.json({ user: req.session.user }));
 
+// Lista vendas de uma data especifica (debug)
+app.get('/api/sales/by-date', (req, res) => {
+  if (req.session.user?.username !== 'admin') return res.status(403).json({ error: 'Acesso negado' });
+  const date = req.query.date;
+  if (!date) return res.status(400).json({ error: 'date é obrigatório' });
+  const rows = db.prepare('SELECT id, date, unit, product, value, order_id, created_at FROM sales WHERE date = ? ORDER BY id').all(date);
+  res.json({ rows });
+});
+
 // Lista grupos de vendas duplicadas (mesma data/unidade/produto/valor/order_id)
 app.get('/api/sales/duplicates', (req, res) => {
   if (req.session.user?.username !== 'admin') return res.status(403).json({ error: 'Acesso negado' });
