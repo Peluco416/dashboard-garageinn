@@ -121,66 +121,6 @@ export function buildPayload() {
   };
 }
 
-// ── Webhook Vindi (público — chamado pela Vindi ao confirmar pagamento) ──────
-app.post('/api/webhook/vindi', (req, res) => {
-  try {
-    const body = req.body ?? {};
-
-    // A Vindi envia o evento em body.event.type e os dados em body.event.data
-    const eventType = body?.event?.type ?? body?.type ?? '';
-    const data      = body?.event?.data ?? body?.data ?? body;
-
-    // Só processa pagamentos confirmados
-    const isPayment = eventType.includes('charge') || eventType.includes('payment') ||
-                      eventType.includes('bill') || JSON.stringify(body).toLowerCase().includes('paid');
-
-    if (!isPayment) {
-      return res.json({ ok: true, skipped: 'evento não é pagamento confirmado' });
-    }
-
-    // Extrai o nome do plano (produto) e valor
-    const planName  = data?.plan?.name ?? data?.product_items?.[0]?.product?.name ?? data?.subscription?.plan?.name ?? '';
-    const amount    = data?.amount ?? data?.bill_items?.[0]?.amount ?? data?.charge?.amount ?? 0;
-    const dateRaw   = data?.created_at ?? data?.updated_at ?? null;
-    const date      = dateRaw ? dateRaw.slice(0, 10) : localDateStr();
-
-    // Detecta produto pelo nome do plano
-    const lower = planName.toLowerCase();
-    let product = 'Carro';
-    if (lower.includes('moto'))                              product = 'Moto';
-    else if (lower.includes('bicicleta') || lower.includes('bike')) product = 'Bicicleta';
-    else if (lower.includes('selo'))                         product = 'Selos';
-
-    // Detecta unidade pelo nome do plano
-    let unit = 'SP1';
-    const UNIT_MAP_KEYWORDS = {
-      'nações unidas': 'SP1', 'nacoes unidas': 'SP1',
-      'martiniano':    'SP2',
-      'rebouças':      'SP3', 'reboucas': 'SP3',
-      'brasilia':      'DF1', 'brasília': 'DF1',
-      'aqwa':          'RJ1',
-      'alphaville':    'Barueri1', 'barueri': 'Barueri1',
-    };
-    for (const [kw, code] of Object.entries(UNIT_MAP_KEYWORDS)) {
-      if (lower.includes(kw)) { unit = code; break; }
-    }
-
-    const value = parseFloat(amount) / 100; // Vindi envia centavos
-    if (!value || value <= 0) {
-      return res.json({ ok: true, skipped: 'valor zero ou inválido' });
-    }
-
-    insertSale(db, { unit, product, value, date });
-    notify();
-
-    console.log(`[webhook] Venda registrada: ${unit} | ${product} | R$${value} | ${date}`);
-    res.json({ ok: true, unit, product, value, date });
-  } catch(e) {
-    console.error('[webhook] Erro:', e.message);
-    res.status(500).json({ error: e.message });
-  }
-});
-
 // ── Endpoints de sincronização (públicos, protegidos por chave) ──────────────
 app.delete('/api/sales/delete', (req, res) => {
   try {
