@@ -155,6 +155,26 @@ export function getUnitRankings(db, month, today, yesterday) {
   });
 }
 
+export function getUnitRankingsAllTime(db) {
+  const rows = db.prepare(`
+    SELECT
+      unit,
+      SUM(value) AS total_value,
+      COUNT(*)   AS total_count
+    FROM sales
+    GROUP BY unit
+    ORDER BY total_value DESC
+  `).all();
+
+  return rows.map((r, i) => ({
+    rank:        i + 1,
+    unit:        r.unit,
+    total_value: +r.total_value.toFixed(2),
+    total_count: r.total_count,
+    total_ticket: r.total_count > 0 ? +(r.total_value / r.total_count).toFixed(2) : 0,
+  }));
+}
+
 export function getProductTotals(db, month) {
   return db.prepare(`
     SELECT product, SUM(value) AS total

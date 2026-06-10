@@ -4,7 +4,7 @@ import session from 'express-session';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { initDb, insertSale, getMonthlyTotals, getDailyKpis,
-         getUnitRankings, getProductTotals, getBannerData,
+         getUnitRankings, getUnitRankingsAllTime, getProductTotals, getBannerData,
          getWeeklyPeriodComparison } from './data_store.js';
 import { startWatcher } from './email_reader.js';
 import { createUser, verifyUser, deleteUser, listUsers, requireAuth,
@@ -104,10 +104,14 @@ export function buildPayload() {
   banner.current_ticket = banner.current_count > 0
     ? +(banner.current_total / banner.current_count).toFixed(2) : 0;
 
+  // Ranking por faturamento total acumulado (todo o período apurado)
+  const allTimeRankings = getUnitRankingsAllTime(db)
+    .map(r => ({ ...r, unit_name: UNIT_NAMES[r.unit] ?? r.unit }));
+
   return {
     banner, kpis, weekly, monthly_chart, products,
-    top5_best:  rankings.slice(0, 5),
-    top5_worst: rankings.slice(-5).reverse(),
+    top5_best:  allTimeRankings.slice(0, 5),
+    top5_worst: allTimeRankings.slice(-5).reverse(),
   };
 }
 

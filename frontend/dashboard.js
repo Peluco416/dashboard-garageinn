@@ -210,8 +210,8 @@ function renderRanking(id, rows) {
     <tr>
       <td>${badge(r.rank)}</td>
       <td title="${r.unit_name ?? r.unit}">${r.unit_name ?? r.unit}</td>
-      <td style="font-weight:700">${R(r.month_total)}</td>
-      <td style="color:#4a5568">${R(r.month_ticket)}</td>
+      <td style="font-weight:700">${R(r.total_value)}</td>
+      <td style="color:#4a5568">${R(r.total_ticket)}</td>
     </tr>`).join('');
 }
 
