@@ -76,8 +76,9 @@ function extractDate(text) {
 
 /**
  * Parseia um e-mail de pedido GarageINN.
- * Só processa se "Situação do pedido: Vindi - Pagamento confirmado" estiver no corpo.
- * Retorna { unit, product, value, date } ou null.
+ * Só processa se "Situação do pedido: Vindi - Pagamento confirmado" estiver no corpo
+ * e o e-mail tiver um número de pedido (order_id) extraível.
+ * Retorna { unit, product, value, date, order_id } ou null.
  */
 export function parseSaleEmail(body, subject = '') {
   // Só processa pagamentos confirmados
@@ -89,7 +90,8 @@ export function parseSaleEmail(body, subject = '') {
   const date     = extractDate(body);
   const order_id = extractOrderId(subject || body);
 
-  if (!unit || !product || !value || value <= 0) return null;
+  // Exige numero de pedido para garantir deduplicacao (order_id unico)
+  if (!unit || !product || !value || value <= 0 || !order_id) return null;
 
   return { unit, product, value, date, order_id };
 }
