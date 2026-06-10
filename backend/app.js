@@ -203,6 +203,23 @@ app.delete('/api/sales/delete', (req, res) => {
   }
 });
 
+app.delete('/api/sales/delete-by-id', (req, res) => {
+  try {
+    const key = req.headers['x-sync-key'] ?? req.body?.key;
+    if (key !== (process.env.SYNC_KEY ?? 'garageinn_sync_2026'))
+      return res.status(401).json({ error: 'Chave inválida' });
+
+    const { id } = req.body ?? {};
+    if (!id) return res.status(400).json({ error: 'id é obrigatório' });
+
+    const result = db.prepare('DELETE FROM sales WHERE id = ?').run(id);
+    if (result.changes) notify();
+    res.json({ ok: true, deleted: result.changes });
+  } catch(e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
 app.post('/api/sales/insert', (req, res) => {
   try {
     const key  = req.headers['x-sync-key'] ?? req.body?.key;

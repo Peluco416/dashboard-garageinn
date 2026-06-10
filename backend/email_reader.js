@@ -27,7 +27,7 @@ function extractUnit(subject) {
  * Ex: "Garage Inn - SP1 - Pedido nº 6070" → "6070"
  */
 function extractOrderId(subject) {
-  const m = subject.match(/Pedido n[ºo°]?\s*(\d+)/i);
+  const m = subject.match(/Pedido\D*(\d+)/i);
   return m ? m[1] : null;
 }
 
