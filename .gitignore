@@ -13,3 +13,4 @@ serveo_err.txt
 .chromium/
 sync_log.txt
 sync_state.json
+server.log
