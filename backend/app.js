@@ -170,7 +170,7 @@ app.post('/api/sales/insert', (req, res) => {
     const inserted = [];
     for (const s of sales) {
       const { unit, product, value, date, order_id } = s;
-      if (!unit || !product || !value || !date) continue;
+      if (!unit || !product || !value || !date || !order_id) continue;
       insertSale(db, { unit, product, value: parseFloat(value), date, order_id });
       inserted.push({ unit, product, value, date, order_id });
     }
