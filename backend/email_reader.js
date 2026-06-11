@@ -32,6 +32,16 @@ function extractOrderId(subject) {
 }
 
 /**
+ * Extrai o nome do plano/mensalista da linha de produto do e-mail.
+ * Ex: "MENSALISTA NAÇÕES UNIDAS 3 - CARRO" → "MENSALISTA NAÇÕES UNIDAS 3"
+ * Ex: "MENSALISTA BARATA RIBEIRO" → "MENSALISTA BARATA RIBEIRO"
+ */
+function extractPlanName(text) {
+  const m = text.match(/MENSALISTA\s+([^\r\n-]+?)(?:\s*-\s*(?:CARRO|MOTO|BICICLET\w*|SELOS?)\b)?\s*(?:\r?\n|$)/i);
+  return m ? `MENSALISTA ${m[1].trim().toUpperCase()}` : null;
+}
+
+/**
  * Extrai o produto da linha de produto do e-mail.
  * Ex: "MENSALISTA NAÇÕES UNIDAS 3 - CARRO" → "Carro"
  */
@@ -84,16 +94,17 @@ export function parseSaleEmail(body, subject = '') {
   // Só processa pagamentos confirmados
   if (!body.toLowerCase().includes('vindi - pagamento confirmado')) return null;
 
-  const unit     = extractUnit(subject || body);
-  const product  = extractProduct(body);
-  const value    = extractValue(body);
-  const date     = extractDate(body);
-  const order_id = extractOrderId(subject || body);
+  const unit      = extractUnit(subject || body);
+  const product   = extractProduct(body);
+  const value     = extractValue(body);
+  const date      = extractDate(body);
+  const order_id  = extractOrderId(subject || body);
+  const plan_name = extractPlanName(body);
 
   // Exige numero de pedido para garantir deduplicacao (order_id unico)
   if (!unit || !product || !value || value <= 0 || !order_id) return null;
 
-  return { unit, product, value, date, order_id };
+  return { unit, product, value, date, order_id, plan_name };
 }
 
 /**

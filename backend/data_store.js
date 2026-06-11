@@ -27,13 +27,17 @@ export function initDb(dbPath = DEFAULT_DB) {
   if (!cols.some(c => c.name === 'order_id')) {
     db.exec('ALTER TABLE sales ADD COLUMN order_id TEXT');
   }
+  if (!cols.some(c => c.name === 'plan_name')) {
+    db.exec('ALTER TABLE sales ADD COLUMN plan_name TEXT');
+  }
   db.exec('CREATE UNIQUE INDEX IF NOT EXISTS idx_order_id ON sales(order_id)');
+  db.exec('CREATE INDEX IF NOT EXISTS idx_plan_name ON sales(plan_name)');
   return db;
 }
 
-export function insertSale(db, { date, unit, product, value, order_id }) {
-  db.prepare('INSERT OR IGNORE INTO sales (date, unit, product, value, order_id) VALUES (?, ?, ?, ?, ?)')
-    .run(date, unit, product, value, order_id ?? null);
+export function insertSale(db, { date, unit, product, value, order_id, plan_name }) {
+  db.prepare('INSERT OR IGNORE INTO sales (date, unit, product, value, order_id, plan_name) VALUES (?, ?, ?, ?, ?, ?)')
+    .run(date, unit, product, value, order_id ?? null, plan_name ?? null);
 }
 
 export function getMonthlyTotals(db, year) {
@@ -169,6 +173,51 @@ export function getUnitRankingsAllTime(db) {
   return rows.map((r, i) => ({
     rank:        i + 1,
     unit:        r.unit,
+    total_value: +r.total_value.toFixed(2),
+    total_count: r.total_count,
+    total_ticket: r.total_count > 0 ? +(r.total_value / r.total_count).toFixed(2) : 0,
+  }));
+}
+
+// Ranking por mensalista (campo "MENSALISTA ..." extraido do produto do e-mail)
+// agrupando todas as vendas com o mesmo nome de plano, em todo o período.
+export function getPlanRankingsAllTime(db) {
+  const rows = db.prepare(`
+    SELECT
+      plan_name,
+      SUM(value) AS total_value,
+      COUNT(*)   AS total_count
+    FROM sales
+    WHERE plan_name IS NOT NULL
+    GROUP BY plan_name
+    ORDER BY total_value DESC
+  `).all();
+
+  return rows.map((r, i) => ({
+    rank:        i + 1,
+    plan_name:   r.plan_name,
+    total_value: +r.total_value.toFixed(2),
+    total_count: r.total_count,
+    total_ticket: r.total_count > 0 ? +(r.total_value / r.total_count).toFixed(2) : 0,
+  }));
+}
+
+// Mesmo ranking por mensalista, restrito ao mês informado ('YYYY-MM')
+export function getPlanRankingsMonth(db, month) {
+  const rows = db.prepare(`
+    SELECT
+      plan_name,
+      SUM(value) AS total_value,
+      COUNT(*)   AS total_count
+    FROM sales
+    WHERE plan_name IS NOT NULL AND strftime('%Y-%m', date) = ?
+    GROUP BY plan_name
+    ORDER BY total_value DESC
+  `).all(month);
+
+  return rows.map((r, i) => ({
+    rank:        i + 1,
+    plan_name:   r.plan_name,
     total_value: +r.total_value.toFixed(2),
     total_count: r.total_count,
     total_ticket: r.total_count > 0 ? +(r.total_value / r.total_count).toFixed(2) : 0,

@@ -4,7 +4,8 @@ import session from 'express-session';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { initDb, insertSale, getMonthlyTotals, getDailyKpis,
-         getUnitRankings, getUnitRankingsAllTime, getProductTotals, getBannerData,
+         getUnitRankings, getPlanRankingsAllTime, getPlanRankingsMonth,
+         getProductTotals, getBannerData,
          getWeeklyPeriodComparison } from './data_store.js';
 import { startWatcher } from './email_reader.js';
 import { localDateStr, addDaysStr } from './date_utils.js';
@@ -110,26 +111,20 @@ export function buildPayload() {
   banner.current_ticket = banner.current_count > 0
     ? +(banner.current_total / banner.current_count).toFixed(2) : 0;
 
-  // Ranking por faturamento total acumulado (todo o período apurado)
-  const allTimeRankings = getUnitRankingsAllTime(db)
-    .map(r => ({ ...r, unit_name: UNIT_NAMES[r.unit] ?? r.unit }));
+  // Ranking por mensalista (campo "MENSALISTA ..." do produto), todo o período
+  const planRankingsAllTime = getPlanRankingsAllTime(db)
+    .map(r => ({ ...r, unit_name: r.plan_name }));
 
-  // Ranking por faturamento do mês vigente
-  const monthRankings = rankings.map(r => ({
-    rank:         r.rank,
-    unit:         r.unit,
-    unit_name:    r.unit_name,
-    total_value:  r.month_total,
-    total_count:  r.month_count,
-    total_ticket: r.month_ticket,
-  }));
+  // Ranking por mensalista, mês vigente
+  const planRankingsMonth = getPlanRankingsMonth(db, curMonth)
+    .map(r => ({ ...r, unit_name: r.plan_name }));
 
   return {
     banner, kpis, weekly, monthly_chart, products,
-    top5_best:        allTimeRankings.slice(0, 5),
-    top5_worst:       allTimeRankings.slice(-5).reverse(),
-    top5_best_month:  monthRankings.slice(0, 5),
-    top5_worst_month: monthRankings.slice(-5).reverse(),
+    top5_best:        planRankingsAllTime.slice(0, 5),
+    top5_worst:       planRankingsAllTime.slice(-5).reverse(),
+    top5_best_month:  planRankingsMonth.slice(0, 5),
+    top5_worst_month: planRankingsMonth.slice(-5).reverse(),
   };
 }
 
@@ -181,10 +176,10 @@ app.post('/api/sales/insert', (req, res) => {
     const sales = Array.isArray(req.body?.sales) ? req.body.sales : [req.body];
     const inserted = [];
     for (const s of sales) {
-      const { unit, product, value, date, order_id } = s;
+      const { unit, product, value, date, order_id, plan_name } = s;
       if (!unit || !product || !value || !date || !order_id) continue;
-      insertSale(db, { unit, product, value: parseFloat(value), date, order_id });
-      inserted.push({ unit, product, value, date, order_id });
+      insertSale(db, { unit, product, value: parseFloat(value), date, order_id, plan_name });
+      inserted.push({ unit, product, value, date, order_id, plan_name });
     }
     if (inserted.length) notify();
     res.json({ ok: true, inserted: inserted.length, sales: inserted });
