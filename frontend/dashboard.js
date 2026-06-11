@@ -224,6 +224,8 @@ function render(data) {
   renderBottomKpis(data);
   renderRanking('top5-best',  data.top5_best);
   renderRanking('top5-worst', data.top5_worst);
+  renderRanking('top5-best-month',  data.top5_best_month);
+  renderRanking('top5-worst-month', data.top5_worst_month);
 }
 
 // ── Convite ───────────────────────────────────────────────────────────────────

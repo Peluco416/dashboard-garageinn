@@ -114,10 +114,22 @@ export function buildPayload() {
   const allTimeRankings = getUnitRankingsAllTime(db)
     .map(r => ({ ...r, unit_name: UNIT_NAMES[r.unit] ?? r.unit }));
 
+  // Ranking por faturamento do mês vigente
+  const monthRankings = rankings.map(r => ({
+    rank:         r.rank,
+    unit:         r.unit,
+    unit_name:    r.unit_name,
+    total_value:  r.month_total,
+    total_count:  r.month_count,
+    total_ticket: r.month_ticket,
+  }));
+
   return {
     banner, kpis, weekly, monthly_chart, products,
-    top5_best:  allTimeRankings.slice(0, 5),
-    top5_worst: allTimeRankings.slice(-5).reverse(),
+    top5_best:        allTimeRankings.slice(0, 5),
+    top5_worst:       allTimeRankings.slice(-5).reverse(),
+    top5_best_month:  monthRankings.slice(0, 5),
+    top5_worst_month: monthRankings.slice(-5).reverse(),
   };
 }
 
