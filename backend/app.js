@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 import { initDb, insertSale, getMonthlyTotals, getDailyKpis,
          getUnitRankings, getPlanRankingsAllTime, getPlanRankingsMonth,
          getProductTotals, getBannerData,
-         getWeeklyPeriodComparison } from './data_store.js';
+         getWeeklyPeriodComparison, backfillPlanNames } from './data_store.js';
 import { startWatcher } from './email_reader.js';
 import { localDateStr, addDaysStr } from './date_utils.js';
 import { createUser, verifyUser, deleteUser, listUsers, requireAuth,
@@ -183,6 +183,22 @@ app.post('/api/sales/insert', (req, res) => {
     }
     if (inserted.length) notify();
     res.json({ ok: true, inserted: inserted.length, sales: inserted });
+  } catch(e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+// Backfill: preenche plan_name em vendas antigas a partir de e-mails reprocessados
+app.post('/api/sales/backfill-plan-names', (req, res) => {
+  try {
+    const key = req.headers['x-sync-key'] ?? req.body?.key;
+    if (key !== (process.env.SYNC_KEY ?? 'garageinn_sync_2026'))
+      return res.status(401).json({ error: 'Chave inválida' });
+
+    const sales = Array.isArray(req.body?.sales) ? req.body.sales : [];
+    const result = backfillPlanNames(db, sales);
+    if (result.total > 0) notify();
+    res.json({ ok: true, ...result });
   } catch(e) {
     res.status(500).json({ error: e.message });
   }

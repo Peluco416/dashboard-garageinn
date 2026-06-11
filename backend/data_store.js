@@ -40,6 +40,62 @@ export function insertSale(db, { date, unit, product, value, order_id, plan_name
     .run(date, unit, product, value, order_id ?? null, plan_name ?? null);
 }
 
+// Preenche plan_name em vendas ja existentes a partir de uma lista de
+// vendas reprocessadas dos e-mails { date, unit, product, value, order_id, plan_name }.
+// 1) Casa por order_id quando a venda no banco ja tem order_id.
+// 2) Para vendas antigas sem order_id, casa por (date, unit, product, value)
+//    em grupos, distribuindo os plan_names na ordem (id crescente / array order).
+export function backfillPlanNames(db, emailSales) {
+  let byOrderId = 0;
+  let byBucket  = 0;
+  const usedEmails = new Set();
+
+  // 1) Casamento direto por order_id
+  const updateByOrder = db.prepare('UPDATE sales SET plan_name = ? WHERE order_id = ? AND plan_name IS NULL');
+  for (let i = 0; i < emailSales.length; i++) {
+    const e = emailSales[i];
+    if (!e.order_id || !e.plan_name) continue;
+    const r = updateByOrder.run(e.plan_name, e.order_id);
+    if (r.changes > 0) {
+      byOrderId += r.changes;
+      usedEmails.add(i);
+    }
+  }
+
+  // 2) Casamento por bucket (date, unit, product, value) para linhas sem order_id
+  const rows = db.prepare(
+    'SELECT id, date, unit, product, value FROM sales WHERE order_id IS NULL AND plan_name IS NULL ORDER BY id'
+  ).all();
+
+  const dbBuckets = new Map();
+  for (const r of rows) {
+    const key = `${r.date}|${r.unit}|${r.product}|${r.value}`;
+    if (!dbBuckets.has(key)) dbBuckets.set(key, []);
+    dbBuckets.get(key).push(r.id);
+  }
+
+  const emailBuckets = new Map();
+  emailSales.forEach((e, i) => {
+    if (usedEmails.has(i) || !e.plan_name) return;
+    const key = `${e.date}|${e.unit}|${e.product}|${e.value}`;
+    if (!emailBuckets.has(key)) emailBuckets.set(key, []);
+    emailBuckets.get(key).push(e.plan_name);
+  });
+
+  const updateById = db.prepare('UPDATE sales SET plan_name = ? WHERE id = ?');
+  for (const [key, ids] of dbBuckets) {
+    const plans = emailBuckets.get(key);
+    if (!plans) continue;
+    const n = Math.min(ids.length, plans.length);
+    for (let i = 0; i < n; i++) {
+      updateById.run(plans[i], ids[i]);
+      byBucket++;
+    }
+  }
+
+  return { byOrderId, byBucket, total: byOrderId + byBucket };
+}
+
 export function getMonthlyTotals(db, year) {
   return db.prepare(`
     SELECT strftime('%Y-%m', date) AS month, SUM(value) AS total
