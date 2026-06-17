@@ -101,7 +101,7 @@ async function checarNovasVendas(page, state) {
       return process.env.SYNC_ALL === 'true' || isRecentEmail(e.timeHint);
     });
 
-    if (!novos.length) return sales;
+    if (!novos.length) return { sales, denied };
 
     console.log(`[sync] 📬 ${novos.length} e-mail(s) novo(s) encontrado(s)`);
 
