@@ -525,38 +525,3 @@ body {
 .down { color: var(--red); }
 .flat { color: var(--sub); }
 
-/* ── Taxa de Conversão ── */
-.conversion-row {
-  grid-column: 1 / -1;
-  padding: 0 20px;
-}
-.conversion-card {
-  background: var(--card); border: 1px solid var(--border);
-  border-radius: 14px; overflow: hidden;
-}
-.conversion-header {
-  padding: 12px 20px;
-  font-size: .7rem; font-weight: 700; letter-spacing: 1px;
-  text-transform: uppercase; color: var(--sub);
-  border-bottom: 1px solid var(--border);
-}
-.conversion-body {
-  display: flex; align-items: stretch;
-}
-.conv-block {
-  flex: 1; padding: 20px 28px; text-align: center;
-}
-.conv-divider {
-  width: 1px; background: var(--border); margin: 16px 0;
-}
-.conv-label {
-  font-size: .6rem; font-weight: 700; letter-spacing: 1px;
-  color: var(--sub); text-transform: uppercase; margin-bottom: 10px;
-}
-.conv-rate {
-  font-size: 2.2rem; font-weight: 800; color: #00d4ff;
-  font-family: 'Segoe UI', sans-serif; letter-spacing: -1px;
-}
-.conv-sub {
-  margin-top: 6px; font-size: .72rem; color: var(--sub);
-}
