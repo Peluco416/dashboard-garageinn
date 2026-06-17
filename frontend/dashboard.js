@@ -197,6 +197,16 @@ function renderBottomKpis(data) {
   }
 }
 
+// ── Taxa de Conversão ─────────────────────────────────────────────────────────
+function renderConversion(total, month) {
+  const fmt = (c) => c?.total_denied > 0 ? `${c.rate}%` : '0%';
+  const sub  = (c) => c ? `${c.converted} recuperado(s) de ${c.total_denied} negado(s)` : '—';
+  document.getElementById('conv-rate-total').textContent = fmt(total);
+  document.getElementById('conv-sub-total').textContent  = sub(total);
+  document.getElementById('conv-rate-month').textContent = fmt(month);
+  document.getElementById('conv-sub-month').textContent  = sub(month);
+}
+
 // ── Rankings ──────────────────────────────────────────────────────────────────
 function badge(r) {
   if (r === 1) return `<span class="badge b1">1</span>`;
@@ -226,6 +236,7 @@ function render(data) {
   renderRanking('top5-worst', data.top5_worst);
   renderRanking('top5-best-month',  data.top5_best_month);
   renderRanking('top5-worst-month', data.top5_worst_month);
+  renderConversion(data.conversion_total, data.conversion_month);
 }
 
 // ── Convite ───────────────────────────────────────────────────────────────────

@@ -7,8 +7,8 @@
  */
 import puppeteer from 'puppeteer-core';
 import 'dotenv/config';
-import { parseSaleEmail } from './email_reader.js';
-import { initDb, insertSale } from './data_store.js';
+import { parseSaleEmail, parseDeniedEmail } from './email_reader.js';
+import { initDb, insertSale, insertDenied } from './data_store.js';
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -50,6 +50,21 @@ async function postToRailway(sales) {
   }
 }
 
+async function postDeniedToRailway(denied) {
+  if (!denied.length) return;
+  try {
+    const resp = await fetch(`${RAILWAY}/api/denied/insert`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'x-sync-key': SYNC_KEY },
+      body: JSON.stringify({ denied }),
+    });
+    const data = await resp.json();
+    console.log(`[sync] ⚠️ Railway: ${data.inserted} pagamento(s) negado(s) registrado(s)`);
+  } catch(e) {
+    console.error('[sync] ❌ Erro Railway (denied):', e.message);
+  }
+}
+
 async function readEmailBody(page) {
   for (const frame of page.frames()) {
     try {
@@ -61,7 +76,8 @@ async function readEmailBody(page) {
 }
 
 async function checarNovasVendas(page, state) {
-  const sales = [];
+  const sales  = [];
+  const denied = [];
   try {
     // Recarregar inbox para ver emails novos
     await page.reload({ waitUntil: 'domcontentloaded', timeout: 20000 });
@@ -103,10 +119,14 @@ async function checarNovasVendas(page, state) {
         const body = await readEmailBody(page);
         if (!body) continue;
 
-        const sale = parseSaleEmail(body, email.subject);
+        const sale   = parseSaleEmail(body, email.subject);
+        const denied_ = !sale ? parseDeniedEmail(body, email.subject) : null;
         if (sale) {
           console.log(`[sync] 💰 ${email.subject} → ${sale.unit} | ${sale.product} | R$${sale.value}`);
           sales.push(sale);
+        } else if (denied_) {
+          console.log(`[sync] ❌ ${email.subject} → negado | ${denied_.unit} | ${denied_.customer_cpf ?? 'sem CPF'}`);
+          denied.push(denied_);
         }
         if (orderNum) state.seen.push(orderNum);
       } catch(e) {
@@ -117,7 +137,7 @@ async function checarNovasVendas(page, state) {
   } catch(e) {
     console.error('[sync] Erro ao verificar e-mails:', e.message);
   }
-  return sales;
+  return { sales, denied };
 }
 
 async function login(page) {
@@ -180,14 +200,17 @@ async function main() {
     console.log(`[sync] 🔍 Verificando... ${now}`);
 
     try {
-      const sales = await checarNovasVendas(page, state);
+      const { sales, denied } = await checarNovasVendas(page, state);
 
-      if (sales.length) {
+      if (sales.length || denied.length) {
         if (localDb) {
-          for (const s of sales) insertSale(localDb, s);
+          for (const s of sales)  insertSale(localDb, s);
+          for (const d of denied) insertDenied(localDb, d);
         }
-        await postToRailway(sales);
-        const latest = sales.map(s => s.date).sort().pop();
+        if (sales.length)  await postToRailway(sales);
+        if (denied.length) await postDeniedToRailway(denied);
+        const allDates = [...sales, ...denied].map(x => x.date).sort();
+        const latest = allDates.pop();
         if (latest > state.lastSyncDate) state.lastSyncDate = latest;
         saveState(state);
       } else {

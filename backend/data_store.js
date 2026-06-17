@@ -22,22 +22,74 @@ export function initDb(dbPath = DEFAULT_DB) {
     CREATE INDEX IF NOT EXISTS idx_date ON sales(date);
     CREATE INDEX IF NOT EXISTS idx_unit ON sales(unit);
   `);
-  // Migração: adiciona order_id e índice único em bancos já existentes
+  // Migrações incrementais de colunas
   const cols = db.prepare("PRAGMA table_info(sales)").all();
-  if (!cols.some(c => c.name === 'order_id')) {
-    db.exec('ALTER TABLE sales ADD COLUMN order_id TEXT');
-  }
-  if (!cols.some(c => c.name === 'plan_name')) {
-    db.exec('ALTER TABLE sales ADD COLUMN plan_name TEXT');
-  }
-  db.exec('CREATE UNIQUE INDEX IF NOT EXISTS idx_order_id ON sales(order_id)');
-  db.exec('CREATE INDEX IF NOT EXISTS idx_plan_name ON sales(plan_name)');
+  if (!cols.some(c => c.name === 'order_id'))      db.exec('ALTER TABLE sales ADD COLUMN order_id TEXT');
+  if (!cols.some(c => c.name === 'plan_name'))     db.exec('ALTER TABLE sales ADD COLUMN plan_name TEXT');
+  if (!cols.some(c => c.name === 'customer_cpf'))  db.exec('ALTER TABLE sales ADD COLUMN customer_cpf TEXT');
+  db.exec('CREATE UNIQUE INDEX IF NOT EXISTS idx_order_id  ON sales(order_id)');
+  db.exec('CREATE INDEX IF NOT EXISTS idx_plan_name        ON sales(plan_name)');
+  db.exec('CREATE INDEX IF NOT EXISTS idx_customer_cpf     ON sales(customer_cpf)');
+
+  // Tabela de pagamentos negados (para taxa de conversão)
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS denied_payments (
+      id            INTEGER PRIMARY KEY AUTOINCREMENT,
+      date          TEXT NOT NULL,
+      unit          TEXT,
+      order_id      TEXT UNIQUE,
+      product       TEXT,
+      value         REAL,
+      plan_name     TEXT,
+      customer_name TEXT,
+      customer_cpf  TEXT,
+      created_at    TEXT DEFAULT (datetime('now'))
+    );
+    CREATE INDEX IF NOT EXISTS idx_denied_cpf  ON denied_payments(customer_cpf);
+    CREATE INDEX IF NOT EXISTS idx_denied_date ON denied_payments(date);
+  `);
   return db;
 }
 
-export function insertSale(db, { date, unit, product, value, order_id, plan_name }) {
-  db.prepare('INSERT OR IGNORE INTO sales (date, unit, product, value, order_id, plan_name) VALUES (?, ?, ?, ?, ?, ?)')
-    .run(date, unit, product, value, order_id ?? null, plan_name ?? null);
+export function insertSale(db, { date, unit, product, value, order_id, plan_name, customer_cpf }) {
+  db.prepare('INSERT OR IGNORE INTO sales (date, unit, product, value, order_id, plan_name, customer_cpf) VALUES (?, ?, ?, ?, ?, ?, ?)')
+    .run(date, unit, product, value, order_id ?? null, plan_name ?? null, customer_cpf ?? null);
+}
+
+export function insertDenied(db, { date, unit, order_id, product, value, plan_name, customer_name, customer_cpf }) {
+  db.prepare(`INSERT OR IGNORE INTO denied_payments
+    (date, unit, order_id, product, value, plan_name, customer_name, customer_cpf)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?)`)
+    .run(date, unit ?? null, order_id ?? null, product ?? null,
+         value ?? null, plan_name ?? null, customer_name ?? null, customer_cpf ?? null);
+}
+
+export function getConversionStats(db, month) {
+  const monthFilter = month ? "AND strftime('%Y-%m', d.date) = ?" : '';
+  const params      = month ? [month] : [];
+
+  const total = db.prepare(
+    `SELECT COUNT(*) AS c FROM denied_payments d WHERE 1=1 ${monthFilter}`
+  ).get(...params).c;
+
+  const converted = db.prepare(`
+    SELECT COUNT(DISTINCT d.id) AS c
+    FROM denied_payments d
+    WHERE customer_cpf IS NOT NULL ${monthFilter}
+      AND EXISTS (
+        SELECT 1 FROM sales s
+        WHERE s.customer_cpf = d.customer_cpf
+          AND s.unit = d.unit
+          AND s.date >= d.date
+          AND (julianday(s.date) - julianday(d.date)) <= 30
+      )
+  `).get(...params).c;
+
+  return {
+    total_denied: total,
+    converted,
+    rate: total > 0 ? +(converted / total * 100).toFixed(1) : 0,
+  };
 }
 
 // Preenche plan_name em vendas ja existentes a partir de uma lista de

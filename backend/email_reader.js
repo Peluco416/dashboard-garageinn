@@ -41,6 +41,16 @@ function extractPlanName(text) {
   return m ? `MENSALISTA ${m[1].trim().toUpperCase()}` : null;
 }
 
+function extractCustomerName(text) {
+  const m = text.match(/Endere[cç]o para fatura\s*[\r\n]+\s*([^\r\n]+)/i);
+  return m ? m[1].trim() : null;
+}
+
+function extractCustomerCpf(text) {
+  const m = text.match(/CPF\/CNPJ:\s*([\d./-]+)/i);
+  return m ? m[1].trim() : null;
+}
+
 /**
  * Extrai o produto da linha de produto do e-mail.
  * Ex: "MENSALISTA NAÇÕES UNIDAS 3 - CARRO" → "Carro"
@@ -91,20 +101,36 @@ function extractDate(text) {
  * Retorna { unit, product, value, date, order_id } ou null.
  */
 export function parseSaleEmail(body, subject = '') {
-  // Só processa pagamentos confirmados
   if (!body.toLowerCase().includes('vindi - pagamento confirmado')) return null;
 
-  const unit      = extractUnit(subject || body);
-  const product   = extractProduct(body);
-  const value     = extractValue(body);
-  const date      = extractDate(body);
-  const order_id  = extractOrderId(subject || body);
-  const plan_name = extractPlanName(body);
+  const unit          = extractUnit(subject || body);
+  const product       = extractProduct(body);
+  const value         = extractValue(body);
+  const date          = extractDate(body);
+  const order_id      = extractOrderId(subject || body);
+  const plan_name     = extractPlanName(body);
+  const customer_cpf  = extractCustomerCpf(body);
 
-  // Exige numero de pedido para garantir deduplicacao (order_id unico)
   if (!unit || !product || !value || value <= 0 || !order_id) return null;
 
-  return { unit, product, value, date, order_id, plan_name };
+  return { unit, product, value, date, order_id, plan_name, customer_cpf };
+}
+
+export function parseDeniedEmail(body, subject = '') {
+  if (!body.toLowerCase().includes('vindi - pagamento negado')) return null;
+
+  const unit          = extractUnit(subject || body);
+  const order_id      = extractOrderId(subject || body);
+  const product       = extractProduct(body);
+  const value         = extractValue(body);
+  const date          = extractDate(body);
+  const plan_name     = extractPlanName(body);
+  const customer_name = extractCustomerName(body);
+  const customer_cpf  = extractCustomerCpf(body);
+
+  if (!order_id) return null;
+
+  return { unit, product, value, date, order_id, plan_name, customer_name, customer_cpf };
 }
 
 /**
