@@ -64,6 +64,16 @@ export function insertDenied(db, { date, unit, order_id, product, value, plan_na
          value ?? null, plan_name ?? null, customer_name ?? null, customer_cpf ?? null);
 }
 
+export function backfillCustomerCpf(db, rows) {
+  const stmt = db.prepare('UPDATE sales SET customer_cpf = ? WHERE order_id = ? AND customer_cpf IS NULL');
+  let updated = 0;
+  for (const { order_id, customer_cpf } of rows) {
+    if (!order_id || !customer_cpf) continue;
+    updated += stmt.run(customer_cpf, order_id).changes;
+  }
+  return updated;
+}
+
 export function getConversionStats(db, month) {
   const monthFilter = month ? "AND strftime('%Y-%m', d.date) = ?" : '';
   const params      = month ? [month] : [];

@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 import { initDb, insertSale, insertDenied, getMonthlyTotals, getDailyKpis,
          getUnitRankings, getPlanRankingsAllTime, getPlanRankingsMonth,
          getProductTotals, getBannerData,
-         getWeeklyPeriodComparison, backfillPlanNames,
+         getWeeklyPeriodComparison, backfillPlanNames, backfillCustomerCpf,
          getConversionStats } from './data_store.js';
 import { startWatcher } from './email_reader.js';
 import { localDateStr, addDaysStr } from './date_utils.js';
@@ -189,6 +189,21 @@ app.post('/api/sales/insert', (req, res) => {
     }
     if (inserted.length) notify();
     res.json({ ok: true, inserted: inserted.length, sales: inserted });
+  } catch(e) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+// Backfill de customer_cpf em vendas já existentes
+app.post('/api/sales/update-cpf', (req, res) => {
+  try {
+    const key = req.headers['x-sync-key'] ?? req.body?.key;
+    if (key !== (process.env.SYNC_KEY ?? 'garageinn_sync_2026'))
+      return res.status(401).json({ error: 'Chave inválida' });
+    const rows = Array.isArray(req.body?.rows) ? req.body.rows : [];
+    const updated = backfillCustomerCpf(db, rows);
+    if (updated > 0) notify();
+    res.json({ ok: true, updated });
   } catch(e) {
     res.status(500).json({ error: e.message });
   }
