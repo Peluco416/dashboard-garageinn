@@ -9,12 +9,13 @@ import puppeteer from 'puppeteer-core';
 import 'dotenv/config';
 import { parseSaleEmail, parseDeniedEmail } from './email_reader.js';
 import { initDb, insertSale, insertDenied } from './data_store.js';
-import { readFileSync, writeFileSync, existsSync } from 'fs';
+import { readFileSync, writeFileSync, existsSync, appendFileSync } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname  = path.dirname(fileURLToPath(import.meta.url));
 const STATE_FILE = path.join(__dirname, '..', 'sync_state.json');
+const LOG_FILE   = path.join(__dirname, '..', 'sync_continuo.log');
 const DB_PATH    = process.env.DB_PATH ?? path.join(__dirname, 'sales.db');
 
 const CHROME     = process.env.CHROME_PATH ?? 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
@@ -24,6 +25,14 @@ const WEBMAIL    = 'https://titan.hostgator.com.br/mail/';
 const TITAN_USER = process.env.IMAP_USER     ?? 'loja@garageinn.online';
 const TITAN_PASS = process.env.IMAP_PASSWORD ?? 'L@j3Gin8f2w5';
 const INTERVALO  = 3 * 60 * 1000; // 3 minutos
+const MAX_CYCLES = 20; // ~1h — reinicia o processo periodicamente para evitar sessão/DOM travados
+
+// Loga no console e em arquivo (o processo roda em segundo plano sem console visível)
+function log(msg) {
+  const line = `[${new Date().toLocaleString('pt-BR')}] ${msg}`;
+  console.log(line);
+  try { appendFileSync(LOG_FILE, line + '\n'); } catch (_) {}
+}
 
 function loadState() {
   try { return JSON.parse(readFileSync(STATE_FILE, 'utf8')); }
@@ -35,6 +44,14 @@ function isRecentEmail(timeHint) {
   return /\d+:\d+\s*(am|pm)/i.test(timeHint);
 }
 
+/** Detecta se a sessão do webmail ainda está ativa (não caiu para tela de login). */
+async function isLoggedIn(page) {
+  const url = page.url();
+  if (url.includes('/login') || !url.includes('/mail/')) return false;
+  const pwField = await page.$('input[type="password"]').catch(() => null);
+  return !pwField;
+}
+
 async function postToRailway(sales) {
   if (!sales.length) return;
   try {
@@ -44,9 +61,9 @@ async function postToRailway(sales) {
       body: JSON.stringify({ sales }),
     });
     const data = await resp.json();
-    console.log(`[sync] ✅ Railway: ${data.inserted} venda(s) registrada(s)`);
+    log(`[sync] ✅ Railway: ${data.inserted} venda(s) registrada(s)`);
   } catch(e) {
-    console.error('[sync] ❌ Erro Railway:', e.message);
+    log(`[sync] ❌ Erro Railway: ${e.message}`);
   }
 }
 
@@ -59,9 +76,9 @@ async function postDeniedToRailway(denied) {
       body: JSON.stringify({ denied }),
     });
     const data = await resp.json();
-    console.log(`[sync] ⚠️ Railway: ${data.inserted} pagamento(s) negado(s) registrado(s)`);
+    log(`[sync] ⚠️ Railway: ${data.inserted} pagamento(s) negado(s) registrado(s)`);
   } catch(e) {
-    console.error('[sync] ❌ Erro Railway (denied):', e.message);
+    log(`[sync] ❌ Erro Railway (denied): ${e.message}`);
   }
 }
 
@@ -83,6 +100,12 @@ async function checarNovasVendas(page, state) {
     await page.reload({ waitUntil: 'domcontentloaded', timeout: 20000 });
     await new Promise(r => setTimeout(r, 3000));
 
+    if (!(await isLoggedIn(page))) {
+      // Sessão caiu para tela de login: falha alto e deixa o processo reiniciar do zero
+      // (relogar na mesma página já se mostrou pouco confiável — melhor um processo novo)
+      throw new Error('Sessão do webmail perdida (caiu para tela de login)');
+    }
+
     const emailTexts = await page.evaluate(() => {
       const lines = document.body.innerText.split('\n');
       const emails = [];
@@ -103,7 +126,7 @@ async function checarNovasVendas(page, state) {
 
     if (!novos.length) return { sales, denied };
 
-    console.log(`[sync] 📬 ${novos.length} e-mail(s) novo(s) encontrado(s)`);
+    log(`[sync] 📬 ${novos.length} e-mail(s) novo(s) encontrado(s)`);
 
     for (const email of novos) {
       const orderNum = email.subject.match(/Pedido nº (\d+)/)?.[1];
@@ -122,20 +145,21 @@ async function checarNovasVendas(page, state) {
         const sale   = parseSaleEmail(body, email.subject);
         const denied_ = !sale ? parseDeniedEmail(body, email.subject) : null;
         if (sale) {
-          console.log(`[sync] 💰 ${email.subject} → ${sale.unit} | ${sale.product} | R$${sale.value}`);
+          log(`[sync] 💰 ${email.subject} → ${sale.unit} | ${sale.product} | R$${sale.value}`);
           sales.push(sale);
         } else if (denied_) {
-          console.log(`[sync] ❌ ${email.subject} → negado | ${denied_.unit} | ${denied_.customer_cpf ?? 'sem CPF'}`);
+          log(`[sync] ❌ ${email.subject} → negado | ${denied_.unit} | ${denied_.customer_cpf ?? 'sem CPF'}`);
           denied.push(denied_);
         }
         if (orderNum) state.seen.push(orderNum);
       } catch(e) {
         if (orderNum) state.seen.push(orderNum);
-        console.error(`[sync] Erro ao processar ${email.subject}:`, e.message);
+        log(`[sync] Erro ao processar ${email.subject}: ${e.message}`);
       }
     }
   } catch(e) {
-    console.error('[sync] Erro ao verificar e-mails:', e.message);
+    if (/Sessão do webmail perdida/.test(e.message)) throw e; // deixa propagar — não é um erro recuperável in-place
+    log(`[sync] Erro ao verificar e-mails: ${e.message}`);
   }
   return { sales, denied };
 }
@@ -146,7 +170,7 @@ async function login(page) {
 
   const url = page.url();
   if (url.includes('/mail/') && !url.includes('/login')) {
-    console.log('[sync] Sessão ativa, já logado.');
+    log('[sync] Sessão ativa, já logado.');
     return true;
   }
 
@@ -160,19 +184,19 @@ async function login(page) {
     await page.click('button.btn-login, .btn-primary');
     await page.waitForNavigation({ waitUntil: 'domcontentloaded', timeout: 30000 });
     await new Promise(r => setTimeout(r, 4000));
-    console.log('[sync] Login realizado.');
+    log('[sync] Login realizado.');
     return true;
   } catch(e) {
-    console.error('[sync] Falha no login:', e.message);
+    log(`[sync] Falha no login: ${e.message}`);
     return false;
   }
 }
 
 async function main() {
-  console.log('[sync] ═══════════════════════════════════════');
-  console.log('[sync]  MONITOR CONTÍNUO — GarageINN Dashboard');
-  console.log(`[sync]  Verificando a cada ${INTERVALO/60000} minutos`);
-  console.log('[sync] ═══════════════════════════════════════');
+  log('[sync] ═══════════════════════════════════════');
+  log('[sync]  MONITOR CONTÍNUO — GarageINN Dashboard');
+  log(`[sync]  Verificando a cada ${INTERVALO/60000} minutos`);
+  log('[sync] ═══════════════════════════════════════');
 
   const localDb = existsSync(DB_PATH) ? initDb(DB_PATH) : null;
 
@@ -189,15 +213,17 @@ async function main() {
   const loggedIn = await login(page);
   if (!loggedIn) {
     await browser.close();
-    console.error('[sync] Não foi possível fazer login. Encerrando.');
+    log('[sync] Não foi possível fazer login. Encerrando (processo será reiniciado pelo PM2).');
     process.exit(1);
   }
 
-  // Loop infinito
-  while (true) {
+  // Loop com número de ciclos limitado: a cada ~1h o processo se encerra de propósito
+  // e o PM2 sobe uma instância nova (browser + login do zero), evitando sessão/DOM travados
+  // por muito tempo — foi exatamente isso que causou vendas de um dia inteiro não sincronizarem.
+  for (let cycle = 1; cycle <= MAX_CYCLES; cycle++) {
     const state = loadState();
     const now   = new Date().toLocaleTimeString('pt-BR');
-    console.log(`[sync] 🔍 Verificando... ${now}`);
+    log(`[sync] 🔍 Verificando... ${now} (ciclo ${cycle}/${MAX_CYCLES})`);
 
     try {
       const { sales, denied } = await checarNovasVendas(page, state);
@@ -214,20 +240,25 @@ async function main() {
         if (latest > state.lastSyncDate) state.lastSyncDate = latest;
         saveState(state);
       } else {
-        console.log(`[sync] ✓ Sem novidades. Próxima verificação em ${INTERVALO/60000} min.`);
+        log(`[sync] ✓ Sem novidades. Próxima verificação em ${INTERVALO/60000} min.`);
         saveState(state);
       }
     } catch(e) {
-      console.error('[sync] Erro no ciclo:', e.message);
-      // Tenta relogar se sessão expirou
-      try { await login(page); } catch {}
+      log(`[sync] 🔴 Erro no ciclo (provável sessão perdida): ${e.message}`);
+      log('[sync] Encerrando processo para reinício limpo pelo PM2.');
+      await browser.close().catch(() => {});
+      process.exit(1);
     }
 
     await new Promise(r => setTimeout(r, INTERVALO));
   }
+
+  log('[sync] Reinício periódico programado — encerrando para renovar sessão/browser.');
+  await browser.close().catch(() => {});
+  process.exit(0);
 }
 
 main().catch(async e => {
-  console.error('[sync] Erro fatal:', e.message);
+  log(`[sync] Erro fatal: ${e.message}`);
   process.exit(1);
 });

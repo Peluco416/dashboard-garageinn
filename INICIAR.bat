@@ -12,16 +12,10 @@ echo.
 cd /d "%~dp0"
 
 echo  Encerrando processos anteriores (se houver)...
-taskkill /f /im node.exe >nul 2>&1
-timeout /t 2 /nobreak >nul
+call pm2 delete dashboard-garageinn-server dashboard-garageinn-sync >nul 2>&1
 
-echo  Iniciando servidor...
-start /b node --use-system-ca backend/app.js
-
-timeout /t 3 /nobreak >nul
-
-echo  Iniciando monitor de e-mails (continuo)...
-start /b node --use-system-ca backend/sync_continuo.js
+echo  Iniciando servidor + monitor de e-mails (via PM2)...
+call pm2 start ecosystem.config.cjs
 
 echo.
 echo  Tudo iniciado!
@@ -32,10 +26,11 @@ echo.
 echo  Login: admin
 echo  Senha: Admin@2026
 echo.
-echo  Monitor de vendas rodando em segundo plano.
+echo  Monitor de vendas rodando em segundo plano via PM2 (reinicia sozinho se travar).
 echo  Novas vendas sao capturadas a cada 3 minutos automaticamente.
+echo  Para ver logs:      pm2 logs dashboard-garageinn-sync
+echo  Para ver status:    pm2 status
 echo.
-echo  MANTENHA ESTA JANELA ABERTA.
-echo  Para encerrar, feche esta janela.
+echo  Esta janela pode ser fechada — os processos continuam rodando em segundo plano.
 echo.
 pause
