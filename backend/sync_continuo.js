@@ -12,6 +12,7 @@ import { initDb, insertSale, insertDenied } from './data_store.js';
 import { readFileSync, writeFileSync, existsSync, appendFileSync } from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { execSync } from 'child_process';
 
 const __dirname  = path.dirname(fileURLToPath(import.meta.url));
 const STATE_FILE = path.join(__dirname, '..', 'sync_state.json');
@@ -50,6 +51,20 @@ async function isLoggedIn(page) {
   if (url.includes('/login') || !url.includes('/mail/')) return false;
   const pwField = await page.$('input[type="password"]').catch(() => null);
   return !pwField;
+}
+
+/**
+ * Fecha o browser e garante que a árvore de processos do Chrome morre de verdade.
+ * browser.close() sozinho já deixou processos orfãos (crashpad/gpu/renderer) presos
+ * no Windows em restarts anteriores, que foram se acumulando até derrubar a máquina
+ * e travar todas as navegações seguintes em timeout — daí o "taskkill /T /F" extra.
+ */
+async function killBrowser(browser) {
+  try { await browser.close(); } catch (_) {}
+  try {
+    const pid = browser.process()?.pid;
+    if (pid) execSync(`taskkill /F /T /PID ${pid}`, { stdio: 'ignore' });
+  } catch (_) {}
 }
 
 async function postToRailway(sales) {
@@ -212,7 +227,7 @@ async function main() {
 
   const loggedIn = await login(page);
   if (!loggedIn) {
-    await browser.close();
+    await killBrowser(browser);
     log('[sync] Não foi possível fazer login. Encerrando (processo será reiniciado pelo PM2).');
     process.exit(1);
   }
@@ -246,7 +261,7 @@ async function main() {
     } catch(e) {
       log(`[sync] 🔴 Erro no ciclo (provável sessão perdida): ${e.message}`);
       log('[sync] Encerrando processo para reinício limpo pelo PM2.');
-      await browser.close().catch(() => {});
+      await killBrowser(browser);
       process.exit(1);
     }
 
@@ -254,7 +269,7 @@ async function main() {
   }
 
   log('[sync] Reinício periódico programado — encerrando para renovar sessão/browser.');
-  await browser.close().catch(() => {});
+  await killBrowser(browser);
   process.exit(0);
 }
 
