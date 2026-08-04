@@ -26,7 +26,7 @@ const WEBMAIL    = 'https://titan.hostgator.com.br/mail/';
 const TITAN_USER = process.env.IMAP_USER     ?? 'loja@garageinn.online';
 const TITAN_PASS = process.env.IMAP_PASSWORD ?? 'L@j3Gin8f2w5';
 const INTERVALO  = 3 * 60 * 1000; // 3 minutos
-const MAX_CYCLES = 20; // ~1h — reinicia o processo periodicamente para evitar sessão/DOM travados
+const SESSION_LIMIT_COOLDOWN = 15 * 60 * 1000; // 15min — espera antes de tentar de novo se a Titan recusar por limite de sessões
 
 // Loga no console e em arquivo (o processo roda em segundo plano sem console visível)
 function log(msg) {
@@ -186,7 +186,7 @@ async function login(page) {
   const url = page.url();
   if (url.includes('/mail/') && !url.includes('/login')) {
     log('[sync] Sessão ativa, já logado.');
-    return true;
+    return 'ok';
   }
 
   try {
@@ -200,10 +200,17 @@ async function login(page) {
     await page.waitForNavigation({ waitUntil: 'domcontentloaded', timeout: 30000 });
     await new Promise(r => setTimeout(r, 4000));
     log('[sync] Login realizado.');
-    return true;
+    return 'ok';
   } catch(e) {
+    // A Titan limita quantas sessões simultâneas essa caixa pode ter. Se detectarmos
+    // esse erro específico, não adianta insistir rápido — só cria mais sessão presa.
+    const bodyText = await page.evaluate(() => document.body.innerText).catch(() => '');
+    if (bodyText.includes('Maximum active sessions')) {
+      log('[sync] 🔴 "Maximum active sessions reached" — limite de sessões da Titan atingido.');
+      return 'session_limit';
+    }
     log(`[sync] Falha no login: ${e.message}`);
-    return false;
+    return 'failed';
   }
 }
 
@@ -225,20 +232,29 @@ async function main() {
   const page = await browser.newPage();
   await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36');
 
-  const loggedIn = await login(page);
-  if (!loggedIn) {
+  const loginResult = await login(page);
+  if (loginResult === 'session_limit') {
+    await killBrowser(browser);
+    log(`[sync] Aguardando ${SESSION_LIMIT_COOLDOWN/60000} min antes de tentar de novo (dar tempo da Titan liberar a sessão).`);
+    await new Promise(r => setTimeout(r, SESSION_LIMIT_COOLDOWN));
+    process.exit(1);
+  }
+  if (loginResult !== 'ok') {
     await killBrowser(browser);
     log('[sync] Não foi possível fazer login. Encerrando (processo será reiniciado pelo PM2).');
     process.exit(1);
   }
 
-  // Loop com número de ciclos limitado: a cada ~1h o processo se encerra de propósito
-  // e o PM2 sobe uma instância nova (browser + login do zero), evitando sessão/DOM travados
-  // por muito tempo — foi exatamente isso que causou vendas de um dia inteiro não sincronizarem.
-  for (let cycle = 1; cycle <= MAX_CYCLES; cycle++) {
+  // Sem reinício periódico por tempo: cada login novo consome uma "sessão ativa" na Titan,
+  // que só é liberada quando expira sozinha (não existe logout explícito conhecido). Reiniciar
+  // por rotina cria sessão atrás de sessão sem nunca fechar a anterior — foi isso, mais o
+  // crash-loop, que esgotou o limite de sessões simultâneas da caixa e travou a sincronização
+  // por horas (ver commit a19bc87). Agora só reiniciamos quando de fato detectamos problema
+  // (isLoggedIn() abaixo, ou erro no ciclo).
+  for (let cycle = 1; ; cycle++) {
     const state = loadState();
     const now   = new Date().toLocaleTimeString('pt-BR');
-    log(`[sync] 🔍 Verificando... ${now} (ciclo ${cycle}/${MAX_CYCLES})`);
+    log(`[sync] 🔍 Verificando... ${now} (ciclo ${cycle})`);
 
     try {
       const { sales, denied } = await checarNovasVendas(page, state);
@@ -267,10 +283,6 @@ async function main() {
 
     await new Promise(r => setTimeout(r, INTERVALO));
   }
-
-  log('[sync] Reinício periódico programado — encerrando para renovar sessão/browser.');
-  await killBrowser(browser);
-  process.exit(0);
 }
 
 main().catch(async e => {
